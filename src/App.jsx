@@ -1,5 +1,7 @@
-function App(){
-  return <h1>Hello world</h1>
+//import "./assets/components/organisms/Service.jsx"
+import Service from "./assets/components/organisms/Service.jsx"
+  export default function App(){
+  return <Service/>
 }
 
-export default App
+ 
