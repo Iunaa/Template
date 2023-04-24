@@ -1,13 +1,15 @@
-/*
-import Pricing from "./assets/components/organisms/Pricing/Pricing";
-import Service from "./assets/components/organisms/Service_/Service";
-import Header from "./assets/components/organisms/header/Header";
-import "./assets/components/main.scss";*/
-import Title from "./components/atoms/Title/index.jsx";
+import Header from "./components/organisms/Header/Header.jsx";
+import Service from "./components/organisms/Service_/Service.jsx";
+import Pricing from "./components/organisms/Pricing/Pricing.jsx";
+
+
 
   export default function App(){
   return <>
-      <Title/>
+       <Header/>
+       <Service/>
+       <Pricing/>
+      
   </> 
 }
 

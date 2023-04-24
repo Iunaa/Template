@@ -1,3 +1,5 @@
+import logo from "../../../assets/img/logo.png"
+import "./header.scss"
 function Header(){
     return(
         <div className="container">

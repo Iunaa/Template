@@ -6,6 +6,14 @@ import "../../../components/"
 import ServiceList from '../../molecules/ServiceList';
 import Pricing from '../Pricing/Pricing';*/
 
+import ServiceList from "../../molecules/ServiceList/ServiceList.jsx";
+import group8 from "../../../assets/img/Group8.svg"
+import group6 from "../../../assets/img/Group6.svg"
+import group7 from "../../../assets/img/Group7.svg"
+
+
+
+
 export default function Service(){
     return <div className="articleList__container">
         <ServiceList img={group8} title="Design" paragraph="Agency provides a full service range including technical

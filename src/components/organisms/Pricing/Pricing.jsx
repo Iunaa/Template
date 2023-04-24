@@ -1,4 +1,4 @@
-import CardPricing from "../../molecules/CardPricing/CardPricing"
+//import CardPricing from "../../molecules/CardPricing/CardPricing"
 
 export const pricingCardsData = [
 
@@ -60,9 +60,9 @@ function Pricing(){
 
                     </header>
                     <div id="pricingCards" className="pricing__cards">
-                        <CardPricing
+                        {/* <CardPricing
                             data={pricingCardsData}
-                        />
+                        // /> */}
                     </div>
                 </div>
 
