@@ -1,9 +1,10 @@
-import group8 from '../../img/Group8.svg';
-import group6 from '../../img/Group6.svg';
-import group7 from '../../img/Group7.svg';
-import "./service.scss"
-import ServiceList from '../molecules/ServiceList';
-import Pricing from './Pricing';
+/*import group8 from '/img/Group8.svg';
+import group6 from '/img/Group6.svg';
+import group7 from '/img/Group7.svg';
+//import "./service.scss"
+import "../../../components/"
+import ServiceList from '../../molecules/ServiceList';
+import Pricing from '../Pricing/Pricing';*/
 
 export default function Service(){
     return <div className="articleList__container">

@@ -1,9 +1,4 @@
-import CardPricing from "../molecules/CardPricing/CardPricing"
-
-
-
-
-
+import CardPricing from "../../molecules/CardPricing/CardPricing"
 
 export const pricingCardsData = [
 
