@@ -1,3 +1,59 @@
+import CardPricing from "../molecules/CardPricing/CardPricing"
+
+
+
+
+
+
+export const pricingCardsData = [
+
+ {
+
+  title: "Free",
+
+subtitle: "Consultation",
+
+paragraph: "Your digital marketing efforts, instead of handling in-house.",
+
+popular: false,
+
+ topics: ["enable", "disabled", "disabled"],
+
+ },
+
+ {
+
+title: "$1500",
+
+subtitle: "Design",
+
+ paragraph: "Provide your business with a variety of digital solutions to promote.",
+
+popular: true,
+
+ topics: ["enable", "enable", "disabled"],
+
+},
+
+{
+
+ title: "$2900",
+
+ subtitle: "Design+Code",
+
+ paragraph: "Help you hit your marketing goals and grow your business.",
+
+ popular: false,
+
+topics: ["enable", "enable", "enable"],
+
+ },
+
+]
+
+
+
+
 function Pricing(){
     return(
         <>
@@ -19,3 +75,5 @@ function Pricing(){
         </>
     )
 }
+
+export default Pricing;

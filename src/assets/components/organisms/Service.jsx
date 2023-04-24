@@ -3,6 +3,8 @@ import group6 from '../../img/Group6.svg';
 import group7 from '../../img/Group7.svg';
 import "./service.scss"
 import ServiceList from '../molecules/ServiceList';
+import Pricing from './Pricing';
+
 export default function Service(){
     return <div className="articleList__container">
         <ServiceList img={group8} title="Design" paragraph="Agency provides a full service range including technical
