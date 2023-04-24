@@ -18,6 +18,5 @@ export default function Service(){
         <ServiceList img={group7} title="Marketing" paragraph="Technical skills, design, business understanding, ability."
         anchor="Explore Now"/>   
 
-    
         </div>
 }
