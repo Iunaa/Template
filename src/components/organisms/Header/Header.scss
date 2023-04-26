@@ -12,7 +12,7 @@
             align-items: center;
         }
     }
-    &__list {
+    &__desktop {
         display: none;
 
         @media (min-width: 768px) {
@@ -23,7 +23,7 @@
         }
     }
 
-    &__list li {
+    &__desktop li {
         font-size: 16px;
         display: inline;
         padding: 0 60px;
@@ -37,7 +37,7 @@
         color: white;
     }
 
-    &__menu {
+    &__mobile {
         justify-content: flex-end;
         @media (min-width: 768px) {
             display: none;
