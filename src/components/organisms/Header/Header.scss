@@ -1,3 +1,24 @@
-.container {
-    background-color: #3a3c56;
+.header {
+    margin: auto;
+
+    &__nav-container {
+        background-color: #28293e;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 135px;
+    }
+    &__list li {
+        font-size: 16px;
+        display: inline;
+        padding: 0 60px;
+        color: rgba(255, 255, 255, 1);
+    }
+    &__button {
+        padding: 12px 34px;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 6px;
+        color: white;
+    }
 }
