@@ -1,6 +1,6 @@
 import logo from "../../../assets/img/logo.png"
 import menu from "../../../assets/img/menu.png"
-import "./header.scss"
+
 function Header(){
     return(
         

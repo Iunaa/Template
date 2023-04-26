@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;1,400&display=swap");
+
+.webflow {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding-bottom: 142px;
+    padding-top: 20px;
+    font-family: "Epilogue", sans-serif;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 968px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 134px;
+    }
+
+    &__firstSection {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__subtitle {
+        color: rgba(239, 109, 88, 1);
+        font-family: "Epilogue", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        color: white;
+        font-family: "Epilogue", sans-serif;
+        font-weight: 800;
+        font-size: 56px;
+    }
+
+    &__firstImage {
+        @media (min-width: 768px) {
+            flex-basis: 50%;
+            padding-top: 118px;
+        }
+    }
+
+    &__paragraph {
+        color: rgba(255, 255, 255, 0.64);
+        font-family: "Epilogue", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__button {
+        color: white;
+        background-color: #ef6d58;
+        border-radius: 6px;
+        font-family: "Epilogue", sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        padding: 14px 22px;
+    }
+
+    &__webAnchor {
+        color: rgba(255, 255, 255, 0.64);
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 400;
+        margin: auto;
+    }
+}
