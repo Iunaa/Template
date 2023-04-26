@@ -7,6 +7,7 @@ import Pricing from "./components/organisms/Pricing/Pricing.jsx";
 
 
 
+
   export default function App(){
   return <>
        <Header/>
