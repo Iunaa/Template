@@ -1,15 +1,21 @@
 $color-white: #fff;
-
 $color-black: #000;
-
-$color-gray: #b2b2ba;
-
-$color-gray--dark: #80695c;
-
-$color-brown--light: #f3d1bf;
-
+$color-gray: #B2B2BA;
+$color-gray--dark: #80695C;
+$color-brown--light: #F3D1BF;
 $color-brown: #806354;
-
 $color-brown--dark: #391400;
+$color-blue: #3A3C56;
 
-$color-blue: #3a3c56;
+
+$color-primary: #28293E;
+$color-secondary: #FEFBF8;
+$color-tertiary: #EF6D58;
+
+$shadow-primary: rgba(99, 99, 99, 0.2);
+$shadow-secondary: rgba(0, 0, 0, 0.05);
+$shadow-tertiary:rgba(255, 255, 255, 0.295743);
+
+@mixin boxShadow {
+  box-shadow: $shadow-primary 0 0.125rem 0.5rem 0; //
+}

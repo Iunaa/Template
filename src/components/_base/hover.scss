@@ -1,0 +1,33 @@
+$transition: all 0.3s;
+
+@mixin transition {
+  transition: $transition;
+}
+
+@mixin hover($transition: $transition) {
+  cursor: pointer;
+  transition: $transition;
+}
+
+@mixin hoverShadow() {
+  @include hover();
+  @include boxShadow();
+}
+
+@mixin hoverScale($transition: $transition, $transform-scale: 1.1) {
+  @include hover($transition);
+  transform: scale($transform-scale);
+}
+
+@mixin hoverCard($padding: 0.5rem) {
+  @include hoverScale($transition: all .5s);
+  @include boxShadow();
+  border-radius: 0.5rem;
+  padding: $padding;
+}
+
+@mixin buttonHove($bg-color: $color-tertiary, $color: $color-white) {
+  background-color: $bg-color;
+  color: $color;
+  @include hoverScale();
+}

@@ -1,0 +1,41 @@
+@mixin backgroundOrange($size, $border-radius: 50%) {
+  width: $size;
+  height: $size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  background-color: $color-tertiary;
+}
+
+.icon {
+  @include backgroundOrange($size: 3rem);
+  padding: 1rem;
+
+  &--small {
+    @include backgroundOrange($size: 2rem);
+    padding: 0.625rem;
+  }
+
+  &--medium {
+    @include backgroundOrange($size: 5rem);
+    padding: 1.5rem;
+  }
+  
+  &--white {
+    @include backgroundOrange($size: normal, $border-radius: 1.188rem);
+    color: $color-white;
+    padding: 0.5rem 1rem;
+  }
+  
+  &:hover {
+    @include hoverScale();
+    @include boxShadow();
+  }
+}
+
+@mixin iconWhite {
+  @include backgroundOrange($size: normal, $border-radius: 1.188rem);
+  color: $color-white;
+  padding: 0.5rem 1rem;
+}

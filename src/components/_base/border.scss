@@ -1,0 +1,32 @@
+@mixin border($radius: 0.375rem, $style: solid, $color: $color-brown--light) {
+  border: {
+    radius: $radius;
+    width: 0.063rem;
+    style: $style;
+    color: $color;
+  }
+}
+
+@mixin borderGray() {
+  @include border($color: $shadow-tertiary)
+}
+
+@mixin borderBlue() {
+  @include border($color: $color-blue);
+}
+
+@mixin border-top($style: solid, $color: $color-brown--light) {
+  border-top: 0.063rem $style $color;
+}
+
+@mixin border-bottom($style: solid, $color: $color-brown--light) {
+  border-bottom: 0.063rem solid $color;
+}
+
+@mixin border-right($style: solid, $color: $color-brown--light) {
+  border-right: 0.063rem solid $color;
+}
+
+@mixin border-left($style: solid, $color: $color-brown--light) {
+  border-left: 0.063rem solid $color;
+}

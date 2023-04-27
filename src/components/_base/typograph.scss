@@ -1,1 +1,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,400&display=swap");
+
+@mixin typography($color: $color-white, $weight: 400, $font-size: 1rem, $line-height: 2rem) {
+  color: $color;
+  font: {
+    family: 'Epilogue', sans-serif;
+    size: $font-size;
+    weight: $weight;
+  }
+  line-height: $line-height;
+}
+
+@mixin link {
+  @include typography;
+  cursor: pointer;
+}
+
+@mixin increaseText {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+@mixin title-typography {
+  font-size: 4.5rem;
+  line-height: 5rem;
+  letter-spacing: -0.125rem;
+}
+
+.title {
+  @include typography($color: $color-brown--dark, $weight: 800);
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--1 {
+    color: $color-brown--dark;
+    @include title-typography();
+    &--white {
+      color: $color-white;
+    }
+  }
+
+  &--2 {
+    color: $color-brown--dark;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -0.063rem;
+    &--white {
+      color: $color-white;
+    }
+  }
+  
+  &--3 {
+    color: $color-brown--dark;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    &--white {
+      color: $color-white;
+    }
+  }
+
+  &--4 {
+    color: $color-brown--dark;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    &--white {
+      color: $color-white;
+    }
+    &-white {
+      color: $color-brown--dark;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2rem;
+      color: $color-white;
+    }
+  }
+  
+  &--5 {
+    color: $color-tertiary;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.188rem;
+    text-transform: uppercase;
+    width: 100%;
+    &--white {
+      color: $color-white;
+    }
+  }
+}
+
+.text {
+  @include typography($color: $color-brown);
+
+  &--brown-dark {
+    @include typography($color: $color-brown--dark);
+  }
+
+  &--white {
+    @include typography($color: $color-white);
+  }
+
+  &--gray {
+    @include typography($color: $color-gray);
+  }
+
+  &--gray-dark {
+    @include typography($color: $color-gray--dark);
+  }
+
+  &--small {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  &--big {
+    color: $color-gray--dark;
+    font-size: 1.25rem;
+  }
+
+  &--label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 0.769rem;
+  }
+}

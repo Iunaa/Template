@@ -1,0 +1,36 @@
+@mixin flexColumReverse($align-items: normal) {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: $align-items;
+}
+
+@mixin headings($text-align: left, $align-items: normal) {
+  &--reverse1 {
+    @include flexColumReverse();
+    gap: 1.5rem;
+    text-align: $text-align;
+    align-items: $align-items;
+  }
+
+  &--reverse2 {
+    @include flexColumReverse();
+    gap: 1.25rem;
+    text-align: $text-align;
+    align-items: $align-items;
+  }
+
+  &--reverse3 {
+    @include flexColumReverse();
+    gap: 1.063rem;
+    text-align: $text-align;
+    align-items: $align-items;
+  }
+}
+
+.headings {
+  @include headings();
+}
+
+.headings-center {
+  @include headings($text-align: center, $align-items: center);
+}
