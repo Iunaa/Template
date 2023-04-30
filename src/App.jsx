@@ -1,14 +1,15 @@
-import Pricing from "./assets/components/organisms/Pricing";
-import Service from "./assets/components/organisms/Service";
-import AwardsTitle from "./assets/components/organisms/Awards/AwardsTitle.jsx";
+import "./components/main.scss";
+import Header from "./components/organisms/Header/Header.jsx";
+import Service from "./components/organisms/Service_/Service.jsx";
+import Pricing from "./components/organisms/Pricing/Pricing.jsx";
 import Awards from "./assets/components/organisms/Awards/Awards.jsx";
 
 export default function App() {
   return (
     <>
+      <Header />
       <Service />
       <Pricing />
-      <AwardsTitle />
       <Awards />
     </>
   );
