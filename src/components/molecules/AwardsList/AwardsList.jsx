@@ -63,6 +63,12 @@ export default function AwardsList(props) {
             </div>
           </section>
         ))}
+        <p className="awards__footer">
+          Want more awards?
+          <a href="#" className="awards__footerLink">
+            Explore Now
+          </a>
+        </p>
       </div>
     </>
   );

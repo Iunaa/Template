@@ -60,4 +60,17 @@
     @include paragraph;
     @include colorDarkBrown;
   }
+  &__footer {
+    display: flex;
+    justify-content: center;
+    padding: 3.5rem 0;
+    gap: 0.5rem;
+    color: rgba(57, 20, 0, 0.64);
+    @include paragraph;
+  }
+  &__footerLink {
+    text-decoration: none;
+    @include paragraph;
+    @include colorDarkBrown;
+  }
 }
