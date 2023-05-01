@@ -6,6 +6,8 @@
 //     </>
 //   );
 // }
+// import SOFA from "../../../assets/img/SOFA-awards.svg";
+
 const list = [
   {
     image: "",
@@ -34,8 +36,9 @@ console.log(list);
 export default function AwardsList(props) {
   return (
     <>
-      {list.map((props) => (
-        <div className="awards">
+      <div className="awards">
+        <h3 className="awards__titlePage">Awards</h3>
+        {list.map((props) => (
           <section className="awards__container">
             <div className="awards__itens">
               <picture className="awards__picture">
@@ -59,8 +62,8 @@ export default function AwardsList(props) {
               </picture>
             </div>
           </section>
-        </div>
-      ))}
+        ))}
+      </div>
     </>
   );
 }
