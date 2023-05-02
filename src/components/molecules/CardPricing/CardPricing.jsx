@@ -23,7 +23,7 @@ export default function CardPricing({ data }) {
             <li className={`${cur.topics[2] == "enable" ? topicClassEnable : topicClassDisabled}`}>Production</li>
           </ul>
 
-          <a href="#" className={`${cur.popular ? "pricing__button--orange" : "pricing__button--white"}`}>concat us</a>
+          <a href="#" className={`${cur.popular ? "pricing__button--orange" : "pricing__button--white"}`}>contact us</a>
         </div>
       ))}
     </>

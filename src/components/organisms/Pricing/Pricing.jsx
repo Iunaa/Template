@@ -1,7 +1,7 @@
 import CardPricing from "../../molecules/CardPricing/CardPricing"
 import "./pricing.scss"
 
-export const pricingCardsData = [
+const pricingCardsData = [
   {
     title: "Free",
     subtitle: "Consultation",
