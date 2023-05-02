@@ -3,7 +3,7 @@ function Contact(){
     return(
         <div className="container">
           <section>
-            <article className="article1 container">
+            <article className="article1">
                 <h3 className="article1__subtitle">NewSletter</h3>
                     <label className="article1__label">
                         <input className="article1__input" type="email" placeholder="Your email" name="email"></input>
@@ -13,7 +13,7 @@ function Contact(){
             </article>
             
 
-                <article className="article2 container">
+                <article className="article2">
                     <div className="article2__form">
                         <h4 className="article2__subtitle">Get In Touch</h4>
                         <label className="article2__label">
@@ -27,7 +27,7 @@ function Contact(){
                     </div>
                 </article>
 
-                <article className="article3 container">
+                <article className="article3">
                     <div className="article3__contact">
                         <h5 className="article3__h5">Contact</h5>
                         <h3 className="article3__subtitle">Contact Me</h3>
