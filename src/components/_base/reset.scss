@@ -13,8 +13,13 @@ text-decoration: none;
 }
 html,
 body {
+<<<<<<< HEAD
 max-width: 100vw;
 font-family: sans-serif;
+=======
+    line-height: 1;
+    background-color: #28293e;
+>>>>>>> 1f95b180d950d84b858e9a5cd647ce326c0f6b9a
 }
 body[data-stuck='true'] {
 overflow: hidden;
