@@ -1,7 +1,7 @@
 @import "../../_base/index";
 
 @mixin marginPage-border {
-  margin: 0 8.438rem;
+  // margin: 0 8.438rem;
 }
 @mixin borderLine {
   border-bottom: 1px solid #f3d1bf;
@@ -19,6 +19,9 @@
   margin: 0;
   font-family: "Epilogue", sans-serif;
   background-color: #fdf0e9;
+
+  @include for-size(screen-sm) {
+  }
   &__titlePage {
     display: flex;
     justify-content: center;
@@ -30,10 +33,13 @@
     font-size: 2.5rem;
     font-weight: 800;
     @include colorDarkBrown;
+    @include for-size(screen-sm) {
+    }
   }
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2.5rem 0;
     @include marginPage-border;
     @include borderLine;
