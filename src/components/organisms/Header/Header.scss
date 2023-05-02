@@ -47,6 +47,7 @@
     &__hamburger {
         @media (min-width: 768px) {
             display: none;
+            cursor: pointer;
         }
     }
 }
