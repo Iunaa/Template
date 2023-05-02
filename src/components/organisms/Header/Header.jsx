@@ -6,9 +6,7 @@ function Header(){
        const list = ["About", "Services", "Pricing", "Blog"]
        console.log(list)
     }
-    return(
-        
-        
+    return (
         <div className="header container" >
             <nav  className="header__nav-container" >
                 <picture className="header__picture">
@@ -19,8 +17,8 @@ function Header(){
               <div className="header__menu-container">
                 <div className="header__mobile">
                  <img className="header__hamburger" src={menu} onClick={changeMenu}></img>
-                </div>
-                <div className="header__desktop">
+                 </div>
+              <div className="header__desktop">
                   
                     <ul id="itens">
                         <li><a>About</a></li>
