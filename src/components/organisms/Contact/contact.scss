@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;900;1,400&display=swap");
+.article1 {
+    padding-bottom: 96px;
+
+    &__subtitle {
+        font-family: "Epilogue", sans-serif;
+        font-size: 40px;
+        line-height: 48px;
+        color: white;
+        padding-top: 76px;
+        padding-bottom: 35px;
+    }
+
+    &__label {
+        font-family: "Epilogue", sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    &__input {
+        border-radius: 6px;
+        padding: 16px 114px;
+        margin-bottom: 16px;
+    }
+    &__anchor {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 6px;
+        padding: 16px 114px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 14px;
+        font-weight: 900;
+        color: white;
+    }
+}
+
+.article2 {
+    background-color: white;
+    max-width: 570px;
+    border-radius: 6px;
+
+    &__subtitle {
+        color: rgba(57, 20, 0, 1);
+        font-size: 24px;
+        font-family: "Epilogue", sans-serif;
+        font-weight: 700;
+        line-height: 32px;
+        padding-top: 57px;
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    &__email {
+        margin-top: 26px;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+    }
+
+    &__select {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+    }
+
+    &__textarea {
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+    }
+
+    &__button {
+        margin-top: 32px;
+        margin-left: 129px;
+        margin-bottom: 48px;
+        padding: 16px 29px;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+        background-color: #ef6d58;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Epilogue", sans-serif;
+    }
+}
+
+.article3 {
+    &__h5 {
+        font-family: "Epilogue", sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        margin-top: 60px;
+        margin-bottom: 18px;
+        color: #ef6d58;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-family: "Epilogue", sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 48px;
+        margin-bottom: 15px;
+        color: white;
+    }
+
+    &__paragraph {
+        font-family: "Epilogue", sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.64);
+        margin-bottom: 32px;
+    }
+}
