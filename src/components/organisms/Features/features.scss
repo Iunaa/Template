@@ -41,8 +41,8 @@
     background-color: $color-secondary;
     padding: 2.813rem;
     height: 100%;
-    width: 21rem;
     @include for-size($screen-md) {
+      width: 21rem;
       border: 1px solid $color-blue;
       border-top-right-radius: 0.375rem;
       border-top-left-radius: 0.375rem;
