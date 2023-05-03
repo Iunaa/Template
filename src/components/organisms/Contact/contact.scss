@@ -1,8 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;900;1,400&display=swap");
-
+.contact {
+    background: rgb(40, 41, 62);
+    background: linear-gradient(
+        180deg,
+        rgba(40, 41, 62, 1) 74.5%,
+        rgba(253, 240, 233, 1) 74.5%
+    );
+    @media (min-width: 768px) {
+        background: rgb(40, 41, 62);
+        background: linear-gradient(
+            180deg,
+            rgba(40, 41, 62, 1) 70%,
+            rgba(253, 240, 233, 1) 70%
+        );
+    }
+}
 .article1 {
     padding-bottom: 96px;
     font-family: "Epilogue", sans-serif;
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-top: 69px;
+    }
 
     &__subtitle {
         font-size: 40px;
@@ -15,13 +36,20 @@
     &__label {
         display: flex;
         flex-direction: column;
-        margin: auto;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: baseline;
+        }
     }
 
     &__input {
         border-radius: 6px;
         padding: 16px 114px;
         margin-bottom: 16px;
+
+        @media (min-width: 768px) {
+            margin-left: 200px;
+        }
     }
     &__anchor {
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -32,6 +60,10 @@
         line-height: 14px;
         font-weight: 900;
         color: white;
+        @media (min-width: 768px) {
+            padding: 16px 44px;
+            margin-left: 30px;
+        }
     }
 }
 
@@ -52,6 +84,10 @@
         display: flex;
         flex-direction: column;
         margin: auto;
+    }
+
+    &__form {
+        padding: 57px 28px 48px 28px;
     }
 
     &__email {
@@ -87,6 +123,9 @@
 
 .article3 {
     font-family: "Epilogue", sans-serif;
+    @media (min-width: 768px) {
+        display: inline;
+    }
     &__h5 {
         font-size: 16px;
         line-height: 32px;
@@ -132,19 +171,22 @@
 .article5 {
     font-family: "Epilogue", sans-serif;
     background-color: #ef6d58;
+    @media (min-width: 768px) {
+        display: flex;
+    }
 
     &__subtitle {
         font-size: 40px;
         font-weight: 800;
         line-height: 48px;
         color: white;
-        padding: 8px 27px;
     }
 
     &__paragraph {
         font-size: 16px;
         line-height: 32px;
-        padding: 8px 27px;
+        padding-top: 28px;
+        padding-bottom: 34px;
         color: rgba(255, 255, 255, 0.64);
     }
 
@@ -154,11 +196,18 @@
         line-height: 14px;
         text-transform: uppercase;
         text-align: center;
-        margin: 23px 147px 48px 27px;
         color: rgba(57, 20, 0, 1);
-        padding: 14px 45px;
+        padding: 16px 23px;
         border: 1px solid #f3d1bf;
         border-radius: 6px;
+    }
+
+    &__Help {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 41px 100px 80px 100px;
+        }
     }
 }
 

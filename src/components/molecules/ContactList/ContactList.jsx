@@ -1,7 +1,7 @@
 
 function ContactList(props){
     return <>
-            <section className="ContactList container">
+            <div className="ContactList container">
                 <article className="ContactList__article4">
                     <picture className="article4__picture">
                         <img className="article4__img" src={props.img} alt="icon">
@@ -12,13 +12,13 @@ function ContactList(props){
                     <p className="article4__paragraph3">{props.paragraph3}</p>
                 </article>
 
-            </section>
+            </div>
                     
 
 
                
 
-            <section>
+            <div>
                 <article className="ContactList2__article5">
                     <picture className="ContactList2__container">
                         <img className="article5__img" src={props.img4}></img>
@@ -31,7 +31,7 @@ function ContactList(props){
                     </picture>
 
                 </article>
-            </section>
+            </div>
             </>
 }
 

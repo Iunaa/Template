@@ -8,8 +8,9 @@ import social from "../../../assets/img/social.png";
 
 function Contact(){
     return(
-        <div className="container">
-          <section className="article">
+        
+          <section className="contact">
+            <div className="container">
             <article className="article1">
                 <h3 className="article1__subtitle">NewSletter</h3>
                     <label className="article1__label">
@@ -21,21 +22,24 @@ function Contact(){
             
 
                 <article className="article2">
-                    <div className="article2__form">
-                        <h4 className="article2__subtitle">Get In Touch</h4>
-                        <label className="article2__label">
-                            <input className="article2__email" type="email" placeholder="Your email" name="email"></input>
-                            <select className="article2__select" name="Subject" placeholder="Subject">Subject</select>
-                            <textarea className="article2__textarea" placeholder="Message" cols={60} rows={5}></textarea>
-                            
-                            
-                        </label>
-                        <button className="article2__button">Submit Now</button>
+                    
+                        <div className="article2__form">
+                            <h4 className="article2__subtitle">Get In Touch</h4>
+                            <label className="article2__label">
+                                <input className="article2__email" type="email" placeholder="Your email" name="email"></input>
+                                <select className="article2__select" name="Subject" placeholder="Subject">Subject</select>
+                                <textarea className="article2__textarea" placeholder="Message" cols={60} rows={5}></textarea>
+                                
+                                
+                            </label>
+                            <button className="article2__button">Submit Now</button>
 
 
 
-                    </div>
+                        </div>
+                    
                 </article>
+               
 
                 <article className="article3">
                     <div className="article3__contact">
@@ -44,6 +48,7 @@ function Contact(){
                         <p className="article3__paragraph">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                         
                     </div>
+                    
                 </article>
 
                 <article className="article4">
@@ -60,10 +65,11 @@ function Contact(){
                 <article className="article5">
                     <div className="article5__Help">
                         <ContactList img={img4}/>
-                       
+                        <div>
                         <h3 className="article5__subtitle">Help To Build Your Dream Project</h3>
                         <p className="article5__paragraph">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                         <button className="article5__button">Contact Now</button>
+                    </div>
                     </div>
 
                 </article>
@@ -95,6 +101,7 @@ function Contact(){
 
 
                 </article>
+            </div>
 
             </section>
 
@@ -102,7 +109,7 @@ function Contact(){
 
 
 
-        </div>
+        
     )
 }
 
