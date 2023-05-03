@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;900;1,400&display=swap");
+
 .article1 {
     padding-bottom: 96px;
+    font-family: "Epilogue", sans-serif;
 
     &__subtitle {
-        font-family: "Epilogue", sans-serif;
         font-size: 40px;
         line-height: 48px;
         color: white;
@@ -12,7 +13,6 @@
     }
 
     &__label {
-        font-family: "Epilogue", sans-serif;
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -39,11 +39,11 @@
     background-color: white;
     max-width: 570px;
     border-radius: 6px;
+    font-family: "Epilogue", sans-serif;
 
     &__subtitle {
         color: rgba(57, 20, 0, 1);
         font-size: 24px;
-        font-family: "Epilogue", sans-serif;
         font-weight: 700;
         line-height: 32px;
         padding-top: 57px;
@@ -82,13 +82,12 @@
         background-color: #ef6d58;
         color: white;
         text-transform: uppercase;
-        font-family: "Epilogue", sans-serif;
     }
 }
 
 .article3 {
+    font-family: "Epilogue", sans-serif;
     &__h5 {
-        font-family: "Epilogue", sans-serif;
         font-size: 16px;
         line-height: 32px;
         letter-spacing: 3px;
@@ -99,7 +98,6 @@
     }
 
     &__subtitle {
-        font-family: "Epilogue", sans-serif;
         font-size: 40px;
         font-weight: 800;
         line-height: 48px;
@@ -108,11 +106,105 @@
     }
 
     &__paragraph {
-        font-family: "Epilogue", sans-serif;
         font-size: 16px;
         line-height: 32px;
         text-align: center;
         color: rgba(255, 255, 255, 0.64);
         margin-bottom: 32px;
+    }
+}
+
+.article4 {
+    margin-bottom: 134px;
+    font-family: "Epilogue", sans-serif;
+
+    &__information {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 20px;
+        line-height: 32px;
+        color: white;
+    }
+}
+
+.article5 {
+    font-family: "Epilogue", sans-serif;
+    background-color: #ef6d58;
+
+    &__subtitle {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 48px;
+        color: white;
+        padding: 8px 27px;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        line-height: 32px;
+        padding: 8px 27px;
+        color: rgba(255, 255, 255, 0.64);
+    }
+
+    &__button {
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 23px 147px 48px 27px;
+        color: rgba(57, 20, 0, 1);
+        padding: 14px 45px;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+    }
+}
+
+.article6 {
+    margin-top: 105px;
+    font-family: "Epilogue", sans-serif;
+    text-align: center;
+    background-color: #fdf0e9;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 51px;
+        color: rgba(57, 20, 0, 1);
+    }
+
+    &__subtitle1 {
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        color: #ef6d58;
+    }
+
+    &__list1 {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 48px;
+        color: rgba(57, 20, 0, 1);
+    }
+
+    &__subtitle2 {
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        color: #ef6d58;
+    }
+
+    &__list2 {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 52px;
+        color: rgba(57, 20, 0, 1);
     }
 }

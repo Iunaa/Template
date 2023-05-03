@@ -5,7 +5,7 @@ function ServiceList(props){
                     <img
                         className="articleList__img"
                         src={props.img}
-                        alt="icone do email"
+                        alt="email icon"
                     />
                 </picture>
                 <h4 className="articleList__title">{props.title}</h4>
