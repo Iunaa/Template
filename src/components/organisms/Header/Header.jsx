@@ -21,12 +21,12 @@ function Header(){
                  </div>
               <div className="header__desktop">
                   
-                    <ul id="itens">
+                    <ul className="header__itens" id="itens">
                         <li><a>About</a></li>
                         <li><a>Services</a></li>
                         <li><a>Pricing</a></li>
                         <li><a>Blog</a></li>
-                        <li><a className="header__anchor">Contact</a></li>
+                        
                     </ul>
 
                     
@@ -36,7 +36,7 @@ function Header(){
              
                 
             </div>
-            
+            <a className="header__anchor">Contact</a>
                 
             </nav>
         
