@@ -1,0 +1,54 @@
+@use "../../_base/index"as*;
+
+.service {
+    &__cards {
+      margin-top: 3.188rem;
+      @include border();
+      overflow: hidden;
+      @include for-size($screen-md) {
+        display: flex;
+      }
+    }
+  
+    &__card {
+      background: $color-secondary;
+      padding: {
+        top: 3rem;
+        right: 1.75rem;
+        left: 1.75rem;
+        bottom: 3.188rem;
+      };
+      @include for-size($screen-md) {
+        padding: {
+          top: 3rem;
+          right: 3rem;
+          left: 3rem;
+          bottom: 3.25rem;
+        };
+      }
+      &:nth-child(2) {
+        @include border-top();
+        @include border-bottom();
+        @include for-size($screen-md) {
+          border: {
+            top: none;
+            bottom: none;
+          }
+          @include border-right();
+          @include border-left();
+        }
+      }
+    }
+  
+    &__icon {
+      margin-bottom: 2.563rem;
+    }
+  
+    &__topic {
+      margin-bottom: 1.188rem;
+    }
+  
+    &__paragraph {
+      margin-bottom: 1.625rem;
+    }
+  }

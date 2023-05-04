@@ -37,7 +37,7 @@
         color: white;
     }
 
-    &__menu {
+    &__mobile {
         justify-content: flex-end;
         @media (min-width: 768px) {
             display: none;
