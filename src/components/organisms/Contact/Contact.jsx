@@ -92,7 +92,7 @@ function Contact(){
                 <article className="article5">
                     <div className="article5__Help">
                         <ContactList list={listcontainer2}/>
-                        <div>
+                        <div className="article5__text">
                         <h3 className="article5__subtitle">Help To Build Your Dream Project</h3>
                         <p className="article5__paragraph">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
                         <button className="article5__button">Contact Now</button>
