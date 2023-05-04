@@ -7,6 +7,25 @@ import img4 from "../../../assets/img/img4.png";
 import social from "../../../assets/img/social.png";
 
 function Contact(){
+
+    const listcontainer1 = [
+        {"img": img1,
+        "text": "2247 Lunetta Street, TX 76301"},
+        {"img": img2,
+        "text": "+1 (234) 567-89-00"},
+        {"img": img3,
+        "text": "info@agency.com"},
+    ]
+
+     const listcontainer2 = [
+        {"img": img4}
+    ]
+
+    const listcontainer3 = [
+        {"img": social}
+    ]
+
+    
     return(
         
           <section className="contact">
@@ -19,15 +38,23 @@ function Contact(){
                     </label>
                     
             </article>
-            
 
+            
+            
+                <div className="contact-me">
                 <article className="article2">
                     
                         <div className="article2__form">
                             <h4 className="article2__subtitle">Get In Touch</h4>
                             <label className="article2__label">
                                 <input className="article2__email" type="email" placeholder="Your email" name="email"></input>
-                                <select className="article2__select" name="Subject" placeholder="Subject">Subject</select>
+                                <select className="article2__select" name="Subject" placeholder="Subject" value="Subject">
+                                    <option disabled>Subject</option>
+                                    <option value="valor1">Valor 1</option>
+                                    <option value="valor2">Valor 2</option>
+                                    <option value="valor3">Valor 3</option>
+                                    <option value="valor4">Valor 4</option>
+                                </select>
                                 <textarea className="article2__textarea" placeholder="Message" cols={60} rows={5}></textarea>
                                 
                                 
@@ -40,7 +67,7 @@ function Contact(){
                     
                 </article>
                
-
+                <div className="contact-me2">
                 <article className="article3">
                     <div className="article3__contact">
                         <h5 className="article3__h5">Contact</h5>
@@ -50,21 +77,21 @@ function Contact(){
                     </div>
                     
                 </article>
+               
 
                 <article className="article4">
                     <div className="article4__information">
-                        <ContactList  img={img1} paragraph1="2247 Lunetta Street, TX 76301"/>
-                        <ContactList  img={img2} paragraph2="+1 (234) 567-89-00"/>
-                        <ContactList  img={img3} paragraph3="info@agency.com"/>
-                        
+                        <ContactList list={listcontainer1} />
                     </div>
                     
 
                 </article>
+                </div>
+                 </div>
 
                 <article className="article5">
                     <div className="article5__Help">
-                        <ContactList img={img4}/>
+                        <ContactList list={listcontainer2}/>
                         <div>
                         <h3 className="article5__subtitle">Help To Build Your Dream Project</h3>
                         <p className="article5__paragraph">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
@@ -77,6 +104,7 @@ function Contact(){
                 <article className="article6">
                     <div className="article6__webflow">
                         <h4 className="article6__title">Webflow</h4>
+                        <div className="article6__menu">
                         <h5 className="article6__subtitle1">Menu</h5>
                         <ul className="article6__list1">
                             <li>About</li>
@@ -84,7 +112,9 @@ function Contact(){
                             <li>Blog</li>
                             <li>Contact</li>
                         </ul>
-
+                        </div>
+                        
+                        <div className="article6__menu2">
                         <h5 className="article6__subtitle2">Service</h5>
                         <ul className="article6__list2">
                             <li>Design</li>
@@ -92,12 +122,13 @@ function Contact(){
                             <li>Marketig</li>
                             <li>See More</li>
                         </ul>
+                        </div>
 
-                        
+                        <div className="article6__icons">
+                        <ContactList list={listcontainer3}/>
                     </div>
-                    <div className="article6__icons">
-                        <ContactList img={social}/>
                     </div>
+                    
 
 
                 </article>

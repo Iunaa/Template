@@ -15,9 +15,26 @@
         );
     }
 }
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 130px;
+        margin-bottom: 160px;
+    }
+}
+
+.contact-me2 {
+    @media (min-width: 768px) {
+        flex-basis: 50%;
+    }
+}
 .article1 {
     padding-bottom: 96px;
     font-family: "Epilogue", sans-serif;
+    border-bottom: 1px solid rgba(58, 60, 86, 1);
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row;
@@ -44,7 +61,7 @@
 
     &__input {
         border-radius: 6px;
-        padding: 16px 114px;
+        padding: 16px 0 16px 10px;
         margin-bottom: 16px;
 
         @media (min-width: 768px) {
@@ -71,22 +88,33 @@
     background-color: white;
     max-width: 570px;
     border-radius: 6px;
+    margin-top: 96px;
     font-family: "Epilogue", sans-serif;
+    @media (min-width: 768px) {
+        flex-basis: 50%;
+    }
 
     &__subtitle {
         color: rgba(57, 20, 0, 1);
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
-        padding-top: 57px;
     }
     &__label {
         display: flex;
         flex-direction: column;
-        margin: auto;
+        input,
+        select,
+        textarea {
+            padding: 16px 0 16px 10px;
+            max-width: 100%;
+            width: 100%;
+        }
     }
 
     &__form {
+        display: flex;
+        flex-direction: column;
         padding: 57px 28px 48px 28px;
     }
 
@@ -109,8 +137,8 @@
     }
 
     &__button {
+        align-self: flex-end;
         margin-top: 32px;
-        margin-left: 129px;
         margin-bottom: 48px;
         padding: 16px 29px;
         border: 1px solid #f3d1bf;
@@ -123,9 +151,7 @@
 
 .article3 {
     font-family: "Epilogue", sans-serif;
-    @media (min-width: 768px) {
-        display: inline;
-    }
+
     &__h5 {
         font-size: 16px;
         line-height: 32px;
@@ -147,7 +173,6 @@
     &__paragraph {
         font-size: 16px;
         line-height: 32px;
-        text-align: center;
         color: rgba(255, 255, 255, 0.64);
         margin-bottom: 32px;
     }
@@ -165,6 +190,12 @@
         font-size: 20px;
         line-height: 32px;
         color: white;
+
+        .ContactList__article4 {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
     }
 }
 
@@ -198,7 +229,7 @@
         text-align: center;
         color: rgba(57, 20, 0, 1);
         padding: 16px 23px;
-        border: 1px solid #f3d1bf;
+        background-color: white;
         border-radius: 6px;
     }
 
@@ -216,6 +247,16 @@
     font-family: "Epilogue", sans-serif;
     text-align: center;
     background-color: #fdf0e9;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+
+    &__webflow {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
     &__title {
         font-size: 24px;
