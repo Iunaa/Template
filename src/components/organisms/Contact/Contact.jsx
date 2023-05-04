@@ -42,7 +42,7 @@ function Contact(){
             
             
                 <div className="contact-me">
-                <article className="article2">
+                    <article className="article2">
                     
                         <div className="article2__form">
                             <h4 className="article2__subtitle">Get In Touch</h4>
