@@ -1,53 +1,29 @@
-.header {
-    margin: auto;
+@import "../../_base/index.scss";
 
-    &__nav-container {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-
-        @media (min-width: 768px) {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.header{
+    background-color: $color-primary;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    @include for-size(screen-md) {
+      position: static;
     }
-    &__desktop {
-        display: none;
-
-        @media (min-width: 768px) {
-            font-size: 16px;
-            display: inline;
-            padding: 0 60px;
-            color: rgba(255, 255, 255, 1);
-        }
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    @include for-size(screen-md) {
+      gap: 1rem;
+      flex-wrap: wrap;
     }
-
-    &__desktop li {
-        font-size: 16px;
-        display: inline;
-        padding: 0 60px;
-        color: rgba(255, 255, 255, 1);
-    }
-    &__anchor {
-        padding: 12px 34px;
-        margin-left: 5%;
-        border: 1px solid black;
-        border-radius: 6px;
-        color: white;
-    }
-
-    &__mobile {
-        justify-content: flex-end;
-        @media (min-width: 768px) {
-            display: none;
-        }
-    }
-
-    &__hamburger {
-        @media (min-width: 768px) {
-            display: none;
-            cursor: pointer;
-        }
+  
+    @include for-size(screen-lg) {
+      gap: 8rem;
+      flex-wrap: nowrap;
     }
 }

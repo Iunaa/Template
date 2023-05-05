@@ -1,0 +1,65 @@
+@mixin button($bg-color: $color-primary, $color: $color-white, $text-transform: none, $font-weight: 900) {
+  cursor: pointer;
+  height: 3rem;
+  padding: 1rem 2rem;
+  background-color: $bg-color;
+  color: $color;
+  font-weight: $font-weight;
+  text-transform: $text-transform;
+  display: inline-flex;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  @include boxShadow();
+}
+
+@mixin buttonHove($bg-color: $color-tertiary, $color: $color-white) {
+  background-color: $bg-color;
+  color: $color;
+  @include hoverScale();
+}
+
+.button {  
+  @include button($font-weight: 400);
+  @include border($style: none);
+
+  &:hover {
+    @include buttonHove();
+    @include border();
+  }
+
+  &--border {
+    @include borderGray();
+    @include button($text-transform: uppercase, $font-weight: 900);
+    &:hover {
+      @include buttonHove();
+    }
+  }
+
+  &--secundary {
+    @include border($style: none);
+    @include button($font-weight: 900, $bg-color: $color-tertiary);
+    font-size: 0.875rem;
+    &:hover {
+      @include buttonHove($color-primary);
+      @include border($color: $color-white);
+    }
+  }
+
+  &--white {
+    @include border($style: none);
+    @include button($font-weight: 900, $bg-color: $color-white, $color: $color-brown--dark, $text-transform: uppercase);
+    &:hover {
+      @include buttonHove();
+    }
+  }
+
+  &--orange {
+    @include border($style: none);
+    @include button($font-weight: 900, $bg-color: $color-tertiary, $color: $color-white, $text-transform: uppercase);
+    &:hover {
+      @include buttonHove($bg-color: $color-white, $color: $color-black);
+    }
+  }
+
+}

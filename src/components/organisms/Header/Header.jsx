@@ -1,51 +1,17 @@
-import logo from "../../../assets/img/logo.png"
-import menu from "../../../assets/img/menu.png"
+import Logo from "../../atoms/Logo/Logo"
+import Hamburger from "../../molecules/Hamburger/Hamburger"
+import Navbar from "../../molecules/Navbar/Navbar"
 
-function Header(){
-    function changeMenu(){
-       const list = ["About", "Services", "Pricing", "Blog"]
-       console.log(list)
-    }
+import "./header.scss"
+
+export default function Header({ logoimg }){
     return (
-        <div className="header container" >
-            <nav  className="header__nav-container" >
-
-                <picture className="header__picture">
-                    <img className="header__logo" src={logo} ></img>
-                </picture>
-                 
-
-              <div className="header__menu-container">
-                <div className="header__mobile">
-                 <img className="header__hamburger" src={menu} onClick={changeMenu}></img>
-                 </div>
-              <div className="header__desktop">
-                  
-                    <ul id="itens">
-                        <li><a>About</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Pricing</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a className="header__anchor">Contact</a></li>
-                    </ul>
-
-                    
-                  
-                </div>
-            
-             
-                
-            </div>
-            
-                
+        <header className="header">
+            <nav className="navbar container">
+                <Logo img={logoimg} />
+                <Hamburger />
+                <Navbar />
             </nav>
-        
-            
-
-        
-        </div>
-    )
-    
+        </header>
+    ) 
 }
-
-export default Header
