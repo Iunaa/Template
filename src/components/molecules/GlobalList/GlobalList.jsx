@@ -3,14 +3,14 @@ import "../GlobalList/globalList.scss";
 function GlobalList(){
     return(
         <div className="tags container">
-            <nav>
-                <h5>Category</h5>
-                <ul>
-                    <li>Art Direction</li>
-                    <li>User Interface</li>
-                    <li> Branding Strategy</li>
-                    <li>Print Design</li>
-                    <li>3D Render</li>
+            <nav className="tags__nav">
+                <h5 className="tags__subtitle">Category</h5>
+                <ul className="tags__list">
+                    <li className="tags__item">Art Direction</li>
+                    <li className="tags__item">User Interface</li>
+                    <li className="tags__item"> Branding Strategy</li>
+                    <li className="tags__item">Print Design</li>
+                    <li className="tags__item">3D Render</li>
                 </ul>
 
             </nav>
