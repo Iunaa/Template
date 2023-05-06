@@ -105,23 +105,23 @@ function Contact(){
                     <div className="article6__webflow">
                         <h4 className="article6__title">Webflow</h4>
                         <div className="article6__menu">
-                        <h5 className="article6__subtitle1">Menu</h5>
-                        <ul className="article6__list1">
-                            <li>About</li>
-                            <li>Services</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                        </ul>
+                            <h5 className="article6__subtitle1">Menu</h5>
+                                <ul className="article6__list1">
+                                    <li>About</li>
+                                    <li>Services</li>
+                                    <li>Blog</li>
+                                    <li>Contact</li>
+                                </ul>
                         </div>
                         
                         <div className="article6__menu2">
-                        <h5 className="article6__subtitle2">Service</h5>
-                        <ul className="article6__list2">
-                            <li>Design</li>
-                            <li>Development</li>
-                            <li>Marketig</li>
-                            <li>See More</li>
-                        </ul>
+                            <h5 className="article6__subtitle2">Service</h5>
+                                <ul className="article6__list2">
+                                    <li>Design</li>
+                                    <li>Development</li>
+                                    <li>Marketig</li>
+                                    <li>See More</li>
+                                </ul>
                         </div>
 
                         <div className="article6__icons">

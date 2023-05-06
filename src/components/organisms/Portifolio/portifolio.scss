@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;1,400&display=swap");
+
+.portifolio {
+    font-family: "Epilogue", sans-serif;
+    background-color: rgba(253, 240, 233, 1);
+
+    &__nav {
+        padding: 39px 0;
+    }
+
+    &__arrow {
+        padding-right: 5px;
+    }
+
+    &__anchor {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 12px;
+        color: rgba(57, 20, 0, 1);
+    }
+
+    &__title {
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 64px;
+        letter-spacing: -1px;
+        padding-bottom: 26px;
+        color: #391400;
+
+        @media (min-width: 768px) {
+            font-size: 72px;
+            line-height: 80px;
+            letter-spacing: -2px;
+        }
+    }
+
+    &__paragraph1 {
+        font-size: 20px;
+        line-height: 32px;
+        padding-bottom: 30px;
+        color: #391400;
+    }
+
+    &__paragraph2 {
+        font-size: 16px;
+        line-height: 32px;
+        padding-bottom: 62px;
+        color: rgba(57, 20, 0, 0.64);
+    }
+}

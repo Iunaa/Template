@@ -18,15 +18,15 @@ function Header(){
               <div className="header__menu-container">
                 <div className="header__mobile">
                  <img className="header__hamburger" src={menu} onClick={changeMenu}></img>
-                 </div>
+              </div>
               <div className="header__desktop">
                   
-                    <ul id="itens">
-                        <li><a>About</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Pricing</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a className="header__anchor">Contact</a></li>
+                    <ul className="header__itens" id="itens">
+                        <li className="header__item"><a>About</a></li>
+                        <li className="header__item"><a>Services</a></li>
+                        <li className="header__item"><a>Pricing</a></li>
+                        <li className="header__item"><a>Blog</a></li>
+                        <li className="header__item"><a className="header__anchor">Contact</a></li>
                     </ul>
 
                     

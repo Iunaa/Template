@@ -1,23 +1,17 @@
 // import "./components/main.scss";
 import "./components/_base/_index.scss"
-import Header from "./components/organisms/Header/Header.jsx";
-import Service from "./components/organisms/Service/Service.jsx";
-import Pricing from "./components/organisms/Pricing/Pricing.jsx";
-import Webflow from "./components/organisms/Webflow/Webflow.jsx";
-import Features from "./components/organisms/Features/Features";
-import AboutWebflow from "./components/organisms/About/AboutWebflow";
+import Header2 from "./components/organisms/Header2/Header2.jsx";
+import Portifolio from "./components/organisms/Portifolio/Portifolio.jsx";
 import Contact from "./components/organisms/Contact/Contact.jsx";
 import Footer from "./components/organisms/Footer/Footer.jsx";
 
 export default function App(){
   return <>
-    <Header/>
-    <Webflow/> 
-    <Features />
-    <AboutWebflow />
-    <Service/>
-    <Pricing/>
+    <Header2/>
+    <Portifolio/>
     <Contact/>
+    
+    
     <Footer/>
   </> 
 }
