@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;900;1,400&display=swap");
+
+.text {
+    font-family: "Epilogue", sans-serif;
+    background-color: rgba(253, 240, 233, 1);
+
+    &__subtitle {
+        font-size: 40px;
+        font-weight: 800;
+        padding-bottom: 33px;
+        line-height: 48px;
+        color: #391400;
+    }
+
+    &__paragraph {
+        padding-bottom: 65px;
+    }
+}
