@@ -1,33 +1,32 @@
+import Stories from "../../../assets/img/Blog1.svg";
+import Design from "../../../assets/img/Blog2.svg";
+import Marketing from "../../../assets/img/Blog3.svg";
+
 const listBlog = [
   {
-    image: "",
+    image: Stories,
     title: "Stories",
     subtitle: "Agency is a business you hire to outsource",
     date: "5 Nov, 2021",
   },
   {
-    image: "",
+    image: Design,
     title: "Design",
     subtitle: "Outsource your digital marketing efforts",
     date: "29 Oct, 2021",
   },
   {
-    image: "",
+    image: Marketing,
     title: "Marketing",
     subtitle: "Your business with a variety of digital",
     date: "21 Oct, 2021",
   },
 ];
 
-export default function BlogArticles(props) {
+export default function BlogArticlesList(props) {
   return (
     <>
       <div>
-        <h5>Our blog</h5>
-        <div>
-          <h2>Latest Blog Articles</h2>
-          <a href="#">Discover all</a>
-        </div>
         {listBlog.map((props) => (
           <section>
             <picture>
