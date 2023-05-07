@@ -7,6 +7,7 @@ function Tags(){
 
         <div>
           <div className="tags container">
+            
             <nav className="tags__nav">
                 <h5 className="tags__subtitle">Category</h5>
                 <ul className="tags__list">
@@ -21,12 +22,12 @@ function Tags(){
                 <img className="tags__logo" src={logo}></img>
 
                 <h5 className="tags__date">Date</h5>
-                <p className="tags__paragraph">Dec 2021</p>
+    <p className="tags__paragraph">Dec 2021</p>
 
 
             </nav>
 
-        </div>
+    </div>
         </div>
 
     
