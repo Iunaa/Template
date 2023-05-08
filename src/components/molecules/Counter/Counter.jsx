@@ -10,7 +10,7 @@ export default function Counter(props) {
 
           {data.map((cur) => (
             <div className={`counter__counterItem ${cur.icon && "counter__counterItem--icon"}`}>
-              {cur.icon && (<img src={cur.icon} className="icon__card" alt={`${cur.text} icon`} />)}
+              {cur.icon && (<img src={cur.icon.src} className="icon__card" alt={cur.icon.alt} />)}
               <div>
                 <p className="title--3">{cur.title}</p>
                 <p>{cur.text}</p>

@@ -1,5 +1,9 @@
 import Counter from "../../molecules/Counter/Counter"
 
+import design from "../../../assets/img/design.svg"
+import development from "../../../assets/img/development.svg"
+import marketing from "../../../assets/img/marketing.svg"
+
 export default function AboutUs() {
   return <div className="">
     <Counter
@@ -7,17 +11,26 @@ export default function AboutUs() {
         {
           title: "42%",
           text: "Years of experience",
-          // icon: design 
+          icon: {
+            alt: "",
+            src: design
+          },
         },
         {
           title: "73+",
           text: "Agency members",
-          // icon: development 
+          icon: {
+            alt: "",
+            src: development
+          },
         },
         {
           title: "5.000",
           text: "Projects complete",
-          // icon: marketing  
+          icon: {
+            alt: "",
+            src: marketing
+          },  
         }
       ]}
     />
