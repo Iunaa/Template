@@ -1,12 +1,7 @@
 import "../GlobalList/globalList.scss";
 
 function GlobalList(){
-    const GlobalList = React.forwardRef(({ children}, ref) => (
-        <nav ref={ ref }>
-            { children }
-        </nav>
-
-    ))
+ 
     return(
         <div className="tags container">
             <nav className="tags__nav">

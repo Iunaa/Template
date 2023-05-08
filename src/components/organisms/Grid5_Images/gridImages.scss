@@ -22,22 +22,6 @@
         }
     }
 
-    &__play {
-        @media (max-width: 768px) {
-            position: absolute;
-            top: 2240px;
-            left: 100px;
-        }
-    }
-
-    &__time {
-        @media (max-width: 768px) {
-            position: absolute;
-            top: 2390px;
-            left: 39px;
-        }
-    }
-
     &__picture2 {
     }
 

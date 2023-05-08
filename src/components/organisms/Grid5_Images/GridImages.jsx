@@ -4,8 +4,7 @@ import bitmap5 from "../../../assets/img/Bitmap5.png";
 import bitmap6 from "../../../assets/img/Bitmap6.png";
 import bitmap7 from "../../../assets/img/Bitmap7.png";
 import bitmap8 from "../../../assets/img/Bitmap8.png";
-import play from "../../../assets/img/play.png";
-import time from "../../../assets/img/time.png";
+
 
 function GridImages(){
     return(
@@ -14,8 +13,7 @@ function GridImages(){
             <div className="grid5__grid1">
                 <picture className="grid5__picture">
                     <img className="grid5__image1" src={bitmap4}></img>
-                    <img className="grid5__play" src={play}></img>
-                    <img className="grid5__time" src={time}></img>
+                   
                 </picture>
             </div>
             
