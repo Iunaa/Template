@@ -6,6 +6,7 @@ import Tags from "./components/organisms/Tags/Tags.jsx";
 import Image from "./components/organisms/Image_/Image.jsx";
 import Problem from "./components/organisms/Problem/Problem.jsx";
 import GridImages from "./components/organisms/Grid5_Images/GridImages";
+import Solution from "./components/organisms/Solution/Solution.jsx";
 import Contact from "./components/organisms/Contact/Contact.jsx";
 import Footer from "./components/organisms/Footer/Footer.jsx";
 
@@ -17,6 +18,7 @@ export default function App(){
     <Image/>
     <Problem/>
     <GridImages/>
+    <Solution/>
     <Contact/>
     
     
