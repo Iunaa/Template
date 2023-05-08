@@ -34,6 +34,13 @@
   }
 }
 
+.icon__card {
+  width: 5rem;
+  @include for-size($screen-md) {
+    width: 7rem;
+  }
+}
+
 @mixin iconWhite {
   @include backgroundOrange($size: normal, $border-radius: 1.188rem);
   color: $color-white;
