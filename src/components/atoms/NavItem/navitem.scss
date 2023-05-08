@@ -1,0 +1,17 @@
+@use "../../_base/index"as*;
+
+.nav {
+  &__item {
+    @include for-size(screen-md, $width: max) {
+      margin: 0 auto;
+    }
+  }
+
+  &__link{
+    @include link();
+    
+    &:hover{
+      @include increaseText;
+    }
+  }
+}

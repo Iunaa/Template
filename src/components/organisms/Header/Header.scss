@@ -1,0 +1,29 @@
+@import "../../_base/index.scss";
+
+.header {
+  background-color: $color-primary;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  @include for-size(screen-md) {
+    position: static;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  @include for-size(screen-md) {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(screen-lg) {
+    gap: 8rem;
+    flex-wrap: nowrap;
+  }
+}
