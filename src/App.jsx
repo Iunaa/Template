@@ -5,6 +5,7 @@ import Portifolio from "./components/organisms/Portifolio/Portifolio.jsx";
 import Tags from "./components/organisms/Tags/Tags.jsx";
 import Image from "./components/organisms/Image_/Image.jsx";
 import Problem from "./components/organisms/Problem/Problem.jsx";
+import GridImages from "./components/organisms/Grid5_Images/GridImages";
 import Contact from "./components/organisms/Contact/Contact.jsx";
 import Footer from "./components/organisms/Footer/Footer.jsx";
 
@@ -15,7 +16,9 @@ export default function App(){
     <Tags/>
     <Image/>
     <Problem/>
+    <GridImages/>
     <Contact/>
+    
     
     
     <Footer/>

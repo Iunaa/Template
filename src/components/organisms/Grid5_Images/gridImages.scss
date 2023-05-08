@@ -1,0 +1,51 @@
+.grid5 {
+    background-color: rgba(253, 240, 233, 1);
+
+    &__grid1 {
+        @media (max-width: 768px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__grid2 {
+        @media (max-width: 768px) {
+            padding-bottom: 74px;
+        }
+    }
+
+    &__picture {
+    }
+
+    &__img1 {
+        @media (max-width: 768px) {
+            position: relative;
+        }
+    }
+
+    &__play {
+        @media (max-width: 768px) {
+            position: absolute;
+            top: 2240px;
+            left: 100px;
+        }
+    }
+
+    &__time {
+        @media (max-width: 768px) {
+            position: absolute;
+            top: 2390px;
+            left: 39px;
+        }
+    }
+
+    &__picture2 {
+    }
+
+    &__img1 {
+        padding-right: 9px;
+    }
+
+    &__img3 {
+        padding-right: 9px;
+    }
+}
