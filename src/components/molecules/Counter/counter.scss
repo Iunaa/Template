@@ -8,6 +8,15 @@
   flex-direction: column;
   overflow: hidden;
 
+  &__background {
+    &--secondary {
+      background-color: $color-secondary;
+    }
+    &--primary {
+      background-color: $color-primary;
+    }
+  }
+
   &__counterItem {
     padding: 2.813rem 3rem 2.375rem;
     display: flex;
