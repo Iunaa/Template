@@ -3,7 +3,7 @@
 .header {
     background-color: $color-primary;
     padding: 1rem 0;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     z-index: 1;
     @include for-size(screen-md) {
