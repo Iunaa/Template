@@ -4,11 +4,11 @@ import Navbar from "../../molecules/Navbar/Navbar"
 
 import "./header.scss"
 
-export default function Header({ logoimg }){
+export default function Header({ logoImg }){
     return (
         <header className="header">
             <nav className="navbar container">
-                <Logo img={logoimg} />
+                <Logo img={logoImg} />
                 <Hamburger />
                 <Navbar />
             </nav>

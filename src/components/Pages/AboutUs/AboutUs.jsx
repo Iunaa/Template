@@ -8,7 +8,7 @@ import logoHeader from "../../../assets/img/logoAgency.svg"
 
 export default function AboutUs() {
   return <>
-    <Header logoimg={logoHeader} />
+    <Header logoImg={logoHeader} />
     <Counter
       data={[
         {

@@ -15,7 +15,7 @@ import logoWebflow from "../../../assets/img/logoWebflow.svg"
 export default function Home() {
   return (
     <>
-      <Header logoimg={logoWebflow} />
+      <Header logoImg={logoWebflow} />
       <Webflow/> 
       <Features />
       <AboutWebflow />
