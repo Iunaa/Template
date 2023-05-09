@@ -35,9 +35,10 @@
 }
 
 .icon__card {
-  width: 5rem;
+  width: 100%;
+  max-width: 5rem;
   @include for-size($screen-md) {
-    width: 7rem;
+    max-width: 7rem;
   }
 }
 
