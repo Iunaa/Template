@@ -1,0 +1,14 @@
+@import "../../_base/index";
+
+.service {
+  background: $color-primary;
+  background: linear-gradient(180deg, $color-primary 33.5rem, $color-secondary 33.5rem);
+  padding: {
+    top: 3.5rem;
+    bottom: 3.5625rem;
+  };
+
+  &__title {
+    max-width: 20.938rem;
+  }
+}

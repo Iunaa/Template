@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;900;1,400&display=swap");
+.contact {
+    background: rgb(40, 41, 62);
+    background: linear-gradient(
+        180deg,
+        rgba(40, 41, 62, 1) 74.5%,
+        rgba(253, 240, 233, 1) 74.5%
+    );
+    @media (min-width: 768px) {
+        background: rgb(40, 41, 62);
+        background: linear-gradient(
+            180deg,
+            rgba(40, 41, 62, 1) 70%,
+            rgba(253, 240, 233, 1) 70%
+        );
+    }
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 130px;
+        margin-bottom: 160px;
+    }
+}
+
+.contact-me2 {
+    @media (min-width: 768px) {
+        flex-basis: 50%;
+    }
+}
+.article1 {
+    padding-bottom: 96px;
+    font-family: "Epilogue", sans-serif;
+    border-bottom: 1px solid rgba(58, 60, 86, 1);
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-top: 69px;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        line-height: 48px;
+        color: white;
+        padding-top: 76px;
+        padding-bottom: 35px;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: baseline;
+        }
+    }
+
+    &__input {
+        border-radius: 6px;
+        padding: 16px 0 16px 10px;
+        margin-bottom: 16px;
+
+        @media (min-width: 768px) {
+            margin-left: 200px;
+        }
+    }
+    &__anchor {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 6px;
+        padding: 16px 114px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 14px;
+        font-weight: 900;
+        color: white;
+        @media (min-width: 768px) {
+            padding: 16px 44px;
+            margin-left: 30px;
+        }
+    }
+}
+
+.article2 {
+    background-color: white;
+    max-width: 570px;
+    border-radius: 6px;
+    margin-top: 96px;
+    font-family: "Epilogue", sans-serif;
+    @media (min-width: 768px) {
+        flex-basis: 50%;
+    }
+
+    &__subtitle {
+        color: rgba(57, 20, 0, 1);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        input,
+        select,
+        textarea {
+            padding: 16px 0 16px 10px;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 57px 28px 48px 28px;
+    }
+
+    &__email {
+        margin-top: 26px;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+    }
+
+    &__select {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+    }
+
+    &__textarea {
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+    }
+
+    &__button {
+        align-self: flex-end;
+        margin-top: 32px;
+        margin-bottom: 48px;
+        padding: 16px 29px;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+        background-color: #ef6d58;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+.article3 {
+    font-family: "Epilogue", sans-serif;
+
+    &__h5 {
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        margin-top: 60px;
+        margin-bottom: 18px;
+        color: #ef6d58;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 48px;
+        margin-bottom: 15px;
+        color: white;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(255, 255, 255, 0.64);
+        margin-bottom: 32px;
+    }
+}
+
+.article4 {
+    margin-bottom: 134px;
+    font-family: "Epilogue", sans-serif;
+
+    &__information {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 20px;
+        line-height: 32px;
+        color: white;
+
+        .ContactList__article4 {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+}
+
+.article5 {
+    font-family: "Epilogue", sans-serif;
+    background-color: #ef6d58;
+    padding: 32px 32px 48px;
+    @media (min-width: 768px) {
+        display: flex;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 48px;
+        color: white;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        line-height: 32px;
+        padding-top: 28px;
+        padding-bottom: 34px;
+        color: rgba(255, 255, 255, 0.64);
+    }
+
+    &__button {
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(57, 20, 0, 1);
+        padding: 16px 23px;
+        background-color: white;
+        border-radius: 6px;
+    }
+
+    &__Help {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 41px 100px 80px 100px;
+        }
+    }
+}
+
+.article6 {
+    margin-top: 105px;
+    padding-bottom: 64px;
+    font-family: "Epilogue", sans-serif;
+    text-align: center;
+    background-color: #fdf0e9;
+
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+
+    &__webflow {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 51px;
+        color: rgba(57, 20, 0, 1);
+    }
+
+    &__subtitle1 {
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        color: #ef6d58;
+    }
+
+    &__list1 {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 48px;
+        color: rgba(57, 20, 0, 1);
+    }
+
+    &__subtitle2 {
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        color: #ef6d58;
+    }
+
+    &__list2 {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 52px;
+        color: rgba(57, 20, 0, 1);
+    }
+}

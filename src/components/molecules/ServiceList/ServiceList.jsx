@@ -1,24 +1,18 @@
+import "./service-list.scss"
 
-function ServiceList(props){
-    return <article className="articleList__article">
-                <picture className="articleList__picture">
-                    <img
-                        className="articleList__img"
-                        src={props.img}
-                        alt="icone do email"
-                    />
-                </picture>
-                <h4 className="articleList__title">{props.title}</h4>
-                <p className="articleList__paragraph">
-                    {props.paragraph}
-                </p>
-                <a className="articleList__anchor" href="#">{props.anchor}</a>
-            </article>
-            
-            
-
-            
-
+export default function ServiceList(props){
+  return (
+    <article className="service__card">
+      <picture className="service__picture">
+        <img
+          className="service__icon"
+          src={props.img}
+          alt={`${props.title} icon`}
+        />
+      </picture>
+      <h4 className="title--4 service__topic">{props.title}</h4>
+      <p className="text service__paragraph">{props.paragraph}</p>
+      <a className="service__anchor" href="#">{props.anchor}</a>
+    </article>
+    )         
 }
-
-export default ServiceList
