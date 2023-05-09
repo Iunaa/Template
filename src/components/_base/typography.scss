@@ -40,6 +40,9 @@
     &--white {
       color: $color-white;
     }
+    @include for-size($screen-md, $width: max) {
+      font-size: 3.5rem;
+    }
   }
 
   &--2 {

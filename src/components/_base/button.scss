@@ -1,4 +1,4 @@
-@mixin button($bg-color: $color-primary, $color: $color-white, $text-transform: none, $font-weight: 900) {
+@mixin button($bg-color: $color-primary, $color: $color-white, $text-transform: uppercase, $font-weight: 900) {
   cursor: pointer;
   height: 3rem;
   padding: 1rem 2rem;
@@ -36,7 +36,7 @@
     }
   }
 
-  &--secundary {
+  &--secondary {
     @include border($style: none);
     @include button($font-weight: 900, $bg-color: $color-tertiary);
     font-size: 0.875rem;
