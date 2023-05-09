@@ -3,7 +3,7 @@ import "../GlobalList/globalList.scss";
 function GlobalList(){
  
     return(
-        <div className="tags container">
+        // <div className="tags container">
             <nav className="tags__nav">
                 <h5 className="tags__subtitle">Category</h5>
                 <ul className="tags__list">
@@ -16,7 +16,7 @@ function GlobalList(){
 
             </nav>
 
-        </div>
+        // </div>/
 
     )
 }

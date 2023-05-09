@@ -4,9 +4,13 @@
     font-family: "Epilogue", sans-serif;
     background-color: rgba(253, 240, 233, 1);
     padding-bottom: 100px;
+    @media (min-width: 768px) {
+    }
 
     &__nav {
         padding: 39px 0;
+        @media (min-width: 768px) {
+        }
     }
 
     &__arrow {

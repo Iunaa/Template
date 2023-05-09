@@ -3,7 +3,8 @@ import social from "../../../assets/img/social.png";
 
 function Solution(){
     return(
-        <div className="solution container">
+        <div className="solution">
+            <div className="container">
             <h3 className="solution__subtitle">Solution</h3>
             <p className="solution__paragraph">Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
                <br/>
@@ -13,6 +14,7 @@ function Solution(){
             <picture className="solution__icon">
             <img className="solution__icons" src={social}></img>
             </picture>
+            </div>
 
         </div>
     )

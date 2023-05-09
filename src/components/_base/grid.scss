@@ -9,3 +9,15 @@
         margin: 0 auto;
     }
 }
+
+.container--large {
+    padding: 0rem 23.008px;
+
+    @include for-size(screen-grid) {
+        padding: 0;
+
+        max-width: 570px;
+
+        margin: 0 auto;
+    }
+}

@@ -13,7 +13,8 @@ function Footer2(){
     ]
 
     return <>
-            <footer className="footer2 container">      
+         <div className="footer2">
+            <footer className="container">      
                  <div className="footer2__agency">
                     <h4 className="footer2__title">Agency</h4>
                     <div className="footer2__menu">
@@ -53,6 +54,7 @@ function Footer2(){
                 </div>
                             
         </footer>
+        </div>
 
            </>
     

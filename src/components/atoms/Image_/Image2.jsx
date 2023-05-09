@@ -3,9 +3,9 @@
  import bitmap3 from "../../../assets/img/bitmap3.png"
  function Image2(){
  return(
-         <div>
+         <div className="image">
  
-            <picture className="image container">
+            <picture className="container">
             <img className="image__img" src={bitmap3}></img>
             </picture>
         </div>

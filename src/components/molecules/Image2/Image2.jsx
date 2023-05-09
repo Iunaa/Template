@@ -9,7 +9,8 @@ function Image2(){
         {"img": img4}
     ]
     return(
-         <div className="image2__background container">
+        <div className="image2__background">
+         <div className=" container">
             <div className="image2">
              <ContactList list={listcontainer2}/>
                 <div className="image2__text">
@@ -18,7 +19,8 @@ function Image2(){
                     <button className="image2__button">Contact Now</button>
                 </div>
             </div>
-         </div>
+            </div>
+        </div>
     )
 }
 

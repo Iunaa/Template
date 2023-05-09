@@ -8,8 +8,9 @@ import branding from "../../../assets/img/branding.png"
 
 function RelatedProject(){
     return(
-        <div className="related container">
-            <h4 className="related__subtitle">Related Projects</h4>
+        <div className="related">
+            <div className="container">
+                <h4 className="related__subtitle">Related Projects</h4>
             <div className="related__card1">
                 <p className="related__design">Design</p>
                 <p className="related__sofa">SOFA</p>
@@ -27,7 +28,7 @@ function RelatedProject(){
                 
             </div>
            
-
+          </div>
         </div>
 
     )
