@@ -1,11 +1,14 @@
 import Counter from "../../molecules/Counter/Counter"
+import Header from "../../organisms/Header/Header"
 
 import design from "../../../assets/img/design.svg"
 import development from "../../../assets/img/development.svg"
 import marketing from "../../../assets/img/marketing.svg"
+import logoHeader from "../../../assets/img/logoAgency.svg"
 
 export default function AboutUs() {
-  return <div className="">
+  return <>
+    <Header logoimg={logoHeader} />
     <Counter
       data={[
         {
@@ -34,5 +37,5 @@ export default function AboutUs() {
         }
       ]}
     />
-  </div>
+  </>
 }
