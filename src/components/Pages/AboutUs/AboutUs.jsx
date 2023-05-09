@@ -14,26 +14,26 @@ export default function AboutUs() {
         {
           title: "42%",
           text: "Years of experience",
-          icon: {
-            alt: "",
-            src: design
-          },
+          // icon: {
+          //   alt: "",
+          //   src: design
+          // },
         },
         {
           title: "73+",
           text: "Agency members",
-          icon: {
-            alt: "",
-            src: development
-          },
+          // icon: {
+          //   alt: "",
+          //   src: development
+          // },
         },
         {
           title: "5.000",
           text: "Projects complete",
-          icon: {
-            alt: "",
-            src: marketing
-          },  
+          // icon: {
+          //   alt: "",
+          //   src: marketing
+          // },  
         }
       ]}
     />
