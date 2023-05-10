@@ -7,7 +7,6 @@ import bannerHero from "../../../assets/img/bannerHero.svg"
 import Header from "../../../components/organisms/Header/Header.jsx";
 import Service from "../../../components/organisms/Service/Service.jsx";
 import Pricing from "../../../components/organisms/Pricing/Pricing.jsx";
-// import Webflow from "../../../components/organisms/Webflow/Webflow.jsx";
 import Features from "../../../components/organisms/Features/Features";
 import AboutWebflow from "../../../components/organisms/About/AboutWebflow";
 import Contact from "../../../components/organisms/Contact/Contact.jsx";
@@ -36,8 +35,16 @@ export default function Home() {
           ]
         }}
       />
-      {/* <Webflow/>  */}
-      <Features />
+      <Features 
+        text={{
+          title: "Custom Web Design",
+          link: {
+            src: "#",
+            content: "Read More",
+          }
+        }}
+        cardStyle="primary"
+      />
       <AboutWebflow />
       <Service/>
       <Pricing/>
