@@ -8,7 +8,6 @@ export default function Counter(props) {
     <div className={`counter__background--${background}`}>
       <div className="container">
         <div className="counter">
-          {console.log(data)}
 
           {data.map((cur, idx) => (
             <div key={idx} className={`counter__counterItem${lengthData} ${cur.icon && "counter__counterItem--icon"}`}>
