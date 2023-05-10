@@ -1,0 +1,58 @@
+@use "../../_base/index"as*;
+
+$padding-our-team-mobile: 6.75rem;
+$padding-our-team-desktop: 5.75rem;
+
+.our-team {
+  background-color: $color-primary;
+  padding: {
+    top: $padding-our-team-mobile;
+    bottom: $padding-our-team-mobile;
+  };
+  @include for-size($screen-md) {
+    padding: {
+      top: $padding-our-team-desktop;
+      bottom: $padding-our-team-desktop;
+    };
+  }
+
+  &__header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 2.188rem;
+    @include for-size($screen-md) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    gap: 1.875rem;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  &__title {
+    max-width: 39rem;
+  }
+
+  &__arrows {
+    display: none;
+    @include for-size($screen-md) {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  &__arrow {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $color-blue;
+    border-radius: 1.5rem;
+    @include boxShadow();
+    &:hover {
+      @include buttonHove();
+    }
+  }
+}

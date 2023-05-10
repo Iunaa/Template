@@ -1,0 +1,13 @@
+@use "../../_base/index"as*;
+
+.our-team {
+  &__img {
+    width: 16.875rem;
+    height: 17rem;
+    @include borderBlue();
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 1.563rem;
+  }
+}
