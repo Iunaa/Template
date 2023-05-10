@@ -4,6 +4,7 @@ import Header from "../../organisms/Header/Header"
 import logoHeader from "../../../assets/img/logoAgency.svg"
 import Hero from "../../molecules/Hero/Hero"
 import Features from "../../organisms/Features/Features"
+import OurTeam from "../../organisms/OurTeam/OurTeam"
 
 export default function AboutUs() {
   return <>
@@ -45,5 +46,7 @@ export default function AboutUs() {
         // }
       ]}
     />
+
+    <OurTeam />
   </>
 }
