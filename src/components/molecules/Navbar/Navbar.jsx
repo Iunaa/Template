@@ -26,8 +26,8 @@ export default function Navbar() {
 	return (
     <div className="nav__menu">
       <ul className="nav__items">
-        {listPages.map((cur => (
-          <NavItem router={cur.router} text={cur.text} />
+        {listPages.map(((cur, idx) => (
+          <NavItem key={idx} router={cur.router} text={cur.text} />
         )))}
       </ul>
       
