@@ -39,10 +39,10 @@ export default function AboutUs() {
           title: "73+",
           text: "Agency members",
         },
-        {
-          title: "5.000",
-          text: "Projects complete",
-        }
+        // {
+        //   title: "5.000",
+        //   text: "Projects complete",
+        // }
       ]}
     />
   </>
