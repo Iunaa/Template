@@ -1,8 +1,17 @@
 .image {
     background-color: rgba(253, 240, 233, 1);
     display: flex;
+    padding-top: 70px;
     padding-bottom: 84px;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     &__img {
         width: 100%;
+        @media (min-width: 768px) {
+            width: 800px;
+        }
     }
 }

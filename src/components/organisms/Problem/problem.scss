@@ -3,6 +3,10 @@
 .text {
     font-family: "Epilogue", sans-serif;
     background-color: rgba(253, 240, 233, 1);
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
 
     &__subtitle {
         font-size: 40px;
@@ -10,10 +14,18 @@
         padding-bottom: 33px;
         line-height: 48px;
         color: #391400;
+        @media (min-width: 768px) {
+            max-width: 570px;
+            margin: 0 auto;
+        }
     }
 
     &__paragraph {
         padding-bottom: 65px;
         color: rgba(57, 20, 0, 0.64);
+        @media (min-width: 768px) {
+            max-width: 570px;
+            margin: 0 auto;
+        }
     }
 }

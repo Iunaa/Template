@@ -1,35 +1,32 @@
 .grid5 {
     background-color: rgba(253, 240, 233, 1);
-
-    &__grid1 {
-        @media (max-width: 768px) {
-            padding-bottom: 20px;
-        }
+    padding: 2rem 0;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
     }
 
-    &__grid2 {
-        @media (max-width: 768px) {
-            padding-bottom: 74px;
-        }
-    }
-
-    &__picture {
-    }
-
-    &__img1 {
-        @media (max-width: 768px) {
-            position: relative;
+    &__images {
+        display: flex;
+        gap: 9px;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            gap: 15px;
         }
     }
 
     &__picture2 {
-    }
-
-    &__img1 {
-        padding-right: 9px;
-    }
-
-    &__img3 {
-        padding-right: 9px;
+        display: flex;
+        gap: 9px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 330px;
+        @media (min-width: 768px) {
+            gap: 15px;
+            max-width: 327px;
+        }
     }
 }

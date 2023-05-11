@@ -9,16 +9,16 @@ import bitmap8 from "../../../assets/img/Bitmap8.png";
 function GridImages(){
     return(
         <div className="grid5">
-            <div className="container">
+          <div className="container">
+            <div className="grid5__images">
 
-            <div className="grid5__grid1">
-                <picture className="grid5__picture">
-                    <img className="grid5__image1" src={bitmap4}></img>
-                   
-                </picture>
-            </div>
+                    <picture className="grid5__picture">
+                        <img className="grid5__image1" src={bitmap4}></img>
+                    
+                    </picture>
+                
             
-            <div className="grid5__grid2">
+            
                 <picture className="grid5__picture2">
                     <img className="grid5__img1" src={bitmap5}></img>
                     <img className="grid5__img2" src={bitmap6}></img>
@@ -26,8 +26,9 @@ function GridImages(){
                     <img className="grid5__img4" src={bitmap8}></img>
 
                 </picture>
+            
             </div>
-            </div>
+          </div>
         </div>
 
     )

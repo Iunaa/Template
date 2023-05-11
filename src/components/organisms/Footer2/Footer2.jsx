@@ -18,31 +18,32 @@ function Footer2(){
                  <div className="footer2__agency">
                     <h4 className="footer2__title">Agency</h4>
                     <div className="footer2__menu">
-                        <h5 className="footer2__subtitle1">Menu</h5>
+                        <div className="footer2__menu1">
+                                <h5 className="footer2__subtitle1">Menu</h5>
+                                <ul className="footer2__list1">
+                                    <li>About</li>
+                                    <li>Services</li>
+                                    <li>Blog</li>
+                                    <li>Contact</li>
+                                </ul>'
+                        </div>
+                        <div className="footer2__menu2">
+                            <h5 className="footer2__subtitle1">Service</h5>
                             <ul className="footer2__list1">
-                                <li>About</li>
-                                <li>Services</li>
-                                <li>Blog</li>
-                                <li>Contact</li>
+                                <li>Design</li>
+                                <li>Development</li>
+                                <li>Marketig</li>
+                                <li>See More</li>
                             </ul>
+                        </div>
+                         
+                        
                     </div>
-                </div>
-                                
-                                
-                <div className="footer3 container">
-                    <h5 className="footer3__subtitle2">Service</h5>
-                    <ul className="footer3__list2">
-                        <li>Design</li>
-                        <li>Development</li>
-                        <li>Marketig</li>
-                        <li>See More</li>
-                    </ul>
-                </div>
-
-                <div className="footer3__icons">
                     <ContactList list={listcontainer3}/>
                 </div>
-                            
+                                
+                                
+                
                             
                         
                 <div className="footer4 container">
@@ -53,7 +54,7 @@ function Footer2(){
                     </div>
                 </div>
                             
-        </footer>
+            </footer>
         </div>
 
            </>

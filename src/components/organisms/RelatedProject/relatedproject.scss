@@ -18,13 +18,18 @@
         justify-content: flex-end;
         flex-direction: column;
         background-image: url("../../../assets/img/sofa.png");
+        border-radius: 6px;
         width: 100%;
         max-width: 329px;
         height: 416px;
-        margin: auto;
         padding-left: 34px;
-        margin-bottom: 32px;
         padding-bottom: 24px;
+
+        @media (min-width: 768px) {
+            padding: 10px;
+            width: 570px;
+            height: 416px;
+        }
     }
     &__subtitle {
         font-size: 24px;
@@ -56,12 +61,26 @@
         flex-direction: column;
         justify-content: flex-end;
         background-image: url("../../../assets/img/door.png");
+        border-radius: 6px;
         width: 100%;
         max-width: 329px;
         height: 416px;
-        margin: auto;
         padding-left: 34px;
         padding-bottom: 24px;
+
+        @media (min-width: 768px) {
+            background-image: url(../../../assets/img/workmedia.png);
+        }
+    }
+
+    &__twocards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
     }
 
     &__branding {
@@ -82,9 +101,4 @@
         margin-top: -20px;
         margin-bottom: 47px;
     }
-
-    /*&__sofa {
-        max-width: 100%;
-        height: auto;
-    }*/
 }

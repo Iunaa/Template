@@ -11,24 +11,22 @@ function RelatedProject(){
         <div className="related">
             <div className="container">
                 <h4 className="related__subtitle">Related Projects</h4>
-            <div className="related__card1">
-                <p className="related__design">Design</p>
-                <p className="related__sofa">SOFA</p>
-            </div>
-            
+                <div className="related__twocards">  
+                    <div className="related__card1">
+                        <p className="related__design">Design</p>
+                        <p className="related__sofa">SOFA</p>
+                     </div>
                 
-                
-               
-            
 
-            <div className="related__card2">
-                <p className="related__branding">Branding</p>
-                <p className="related__keyboard">KeyBoard</p>
+                    <div className="related__card2">
+                        <p className="related__branding">Branding</p>
+                        <p className="related__keyboard">KeyBoard</p>
+                        
                 
-                
+                    </div>
+  
+                </div>  
             </div>
-           
-          </div>
         </div>
 
     )

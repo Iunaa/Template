@@ -1,4 +1,4 @@
-.image2 {
+.globalcontact {
     font-family: "Epilogue", sans-serif;
     background-color: #ef6d58;
     border-radius: 6px;
@@ -6,6 +6,7 @@
     width: 100%;
     @media (min-width: 768px) {
         display: flex;
+        flex-direction: row-reverse;
     }
 
     &__background {
@@ -15,7 +16,8 @@
     &__text {
         @media (min-width: 768px) {
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: column;
+            align-items: flex-start;
             padding: 41px 100px 80px 100px;
         }
     }

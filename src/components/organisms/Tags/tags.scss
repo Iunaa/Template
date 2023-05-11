@@ -3,9 +3,15 @@
 .tags {
     display: flex;
     // flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 157px;
+
+    padding-top: 5px;
     font-family: "Epilogue", sans-serif;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 157px;
+    }
 
     &__background {
         background-color: rgba(253, 240, 233, 1);

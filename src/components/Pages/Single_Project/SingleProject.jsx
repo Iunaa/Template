@@ -8,7 +8,7 @@ import Problem from "../../organisms/Problem/Problem.jsx";
 import Grid5Images from "../../organisms/Grid5_Images/GridImages.jsx";
 import Solution from "../../organisms/Solution/Solution.jsx";
 import RelatedProject from "../../organisms/RelatedProject/RelatedProject.jsx";
-import Image2 from "../../molecules/Image2/Image2.jsx" ;
+import GlobalContact from "../../molecules/GlobalContact/GlobalContact";
 import Footer2 from "../../organisms/Footer2/Footer2";
 
 
@@ -24,7 +24,7 @@ function SingleProject(){
           <Grid5Images/>
           <Solution/>
           <RelatedProject/>
-          <Image2/>
+          <GlobalContact/>
           <Footer2/>
 
         </>
