@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./PortifolioFilter.scss";
 
 export default function PortifolioFilter() {
-  const [busca, setBusca] = useState("");
   return (
     <>
       <div className="portifolio-filter">
@@ -11,8 +10,6 @@ export default function PortifolioFilter() {
             name="selecao"
             id="filter"
             className="portifolio-filter__selecao"
-            value={busca}
-            onChange={(ev) => setBusca(ev.target.value)}
           >
             <option
               value="showAll"
