@@ -107,3 +107,53 @@
     }
   }
 }
+
+.pricing__button--orange {
+  @include typography();
+  height: 3rem;
+  padding: {
+    top: 1.125rem;
+    bottom: 1rem;
+    left: 2rem;
+    right: 2rem;
+  };
+  background-color: $color-tertiary;
+  color: $color-white;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-flex;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  @include boxShadow();
+
+  @include border($style: none);
+  &:hover {
+    @include buttonHove($bg-color: $color-secondary, $color: $color-black);
+  }
+}
+
+.pricing__button--white {
+  @include typography();
+  height: 3rem;
+  padding: {
+    top: 1.125rem;
+    bottom: 1rem;
+    left: 2rem;
+    right: 2rem;
+  };
+  background-color: $color-white;
+  color: $color-brown--dark;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-flex;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  @include boxShadow();
+
+  @include border($style: none);
+  &:hover {
+    @include buttonHove();
+  }
+}
