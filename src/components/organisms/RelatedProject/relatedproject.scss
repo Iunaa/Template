@@ -27,16 +27,20 @@
 
         @media (min-width: 768px) {
             padding: 10px;
-            width: 570px;
             height: 416px;
+            max-width: 570px;
         }
     }
     &__subtitle {
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
+
         padding-bottom: 40px;
         color: #391400;
+        @media (min-width: 768px) {
+            // padding-left: 265px;
+        }
     }
 
     &__design {
@@ -70,6 +74,13 @@
 
         @media (min-width: 768px) {
             background-image: url(../../../assets/img/workmedia.png);
+            max-width: 570px;
+        }
+    }
+
+    &__allcards {
+        margin: 0 auto;
+        @media (min-width: 768px) {
         }
     }
 
@@ -77,6 +88,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 30px;
         @media (min-width: 768px) {
             flex-direction: row;
