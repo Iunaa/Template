@@ -1,4 +1,5 @@
 import "./PortifolioFooter.scss";
+import SOCIAL from "../../../assets/img/social.svg";
 
 export default function PortifolioFooter() {
   return (
@@ -27,7 +28,7 @@ export default function PortifolioFooter() {
         </div>
         <picture className="portifolio-footer__picture">
           <img
-            src=""
+            src={SOCIAL}
             alt="Image social.svg"
             className="portifolio-footer__image"
           />
