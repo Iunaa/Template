@@ -1,0 +1,86 @@
+@import "../../_base/index";
+
+@mixin marginPage-border {
+  // margin: 0 8.438rem;
+}
+@mixin borderLine {
+  border-bottom: 1px solid #f3d1bf;
+}
+@mixin colorDarkBrown {
+  color: $color-brown--dark;
+}
+@mixin paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.awards {
+  padding: 0;
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+  background-color: #fdf0e9;
+
+  &__container {
+    display: flex;
+    // flex-flow: column;
+  }
+  @include for-size(screen-sm, $width: min) {
+    &__titlePage {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      text-align: center;
+      padding: 5rem;
+      @include borderLine;
+      border-top: 1px solid #f3d1bf;
+      font-size: 2.5rem;
+      font-weight: 800;
+      @include colorDarkBrown;
+    }
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.5rem 0;
+      @include marginPage-border;
+      @include borderLine;
+    }
+    &__itens {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      @include colorDarkBrown;
+    }
+    &__titleItens {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 2rem;
+    }
+    &__date {
+      @include paragraph;
+      color: rgba(57, 20, 0, 0.64);
+    }
+    &__company {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    &__companyName {
+      @include paragraph;
+      @include colorDarkBrown;
+    }
+    &__footer {
+      display: flex;
+      justify-content: center;
+      padding: 3.5rem 0;
+      gap: 0.5rem;
+      color: rgba(57, 20, 0, 0.64);
+      @include paragraph;
+    }
+    &__footerLink {
+      text-decoration: none;
+      @include paragraph;
+      @include colorDarkBrown;
+    }
+  }
+}
