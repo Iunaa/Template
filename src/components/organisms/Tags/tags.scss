@@ -5,8 +5,7 @@
     // flex-direction: row;
     flex-direction: column;
     justify-content: center;
-
-    padding-top: 5px;
+    padding-top: 60px;
     font-family: "Epilogue", sans-serif;
     @media (min-width: 768px) {
         flex-direction: row;
@@ -37,6 +36,7 @@
 
     &__item {
         color: #391400;
+        padding-left: 60px;
     }
 
     &__client {

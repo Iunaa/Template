@@ -7,8 +7,10 @@ function Tags(){
         <div className="tags__background">
 
             <div className="tags container">
-                <GlobalList/>
+                 <GlobalList/>
+                
                 <nav className="tags__nav">
+                   
 
                     <h5 className="tags__client">Client</h5>
                     <img className="tags__logo" src={logo}></img>
