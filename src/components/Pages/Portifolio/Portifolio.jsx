@@ -12,7 +12,7 @@ export default function Portifolio() {
     <>
       <Header logoimg={Logo} />
       <PortifolioBanner />
-      <PortifolioFilter />
+      {/* <PortifolioFilter /> */}
       <PortifolioCard />
       <PortifolioPaginacao />
       <PortifolioFooter />
