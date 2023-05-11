@@ -102,7 +102,7 @@ export default function PortifolioCard(props) {
                 />
               </picture>
               <div className="portifolio-cards__text">
-                <a href="#" className="portifolio-cards__button">
+                <a href="#" className="portifolio-cards__tag">
                   {props.tag}
                 </a>
                 <h2 className="portifolio-cards__title">{props.title}</h2>
