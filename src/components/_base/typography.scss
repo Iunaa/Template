@@ -26,17 +26,18 @@
   line-height: 5rem;
   letter-spacing: -0.125rem;
 }
-
+// juntar text
 .title {
   @include typography($color: $color-brown--dark, $weight: 800);
 
   &--white {
     color: $color-white;
   }
-
+// renomear h1...
   &--1 {
     color: $color-brown--dark;
     @include title-typography();
+    // apenas 1 white
     &--white {
       color: $color-white;
     }

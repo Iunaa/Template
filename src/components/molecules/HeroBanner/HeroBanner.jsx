@@ -1,6 +1,6 @@
-import "./hero.scss"
+import "./heroBanner.scss"
 
-export default function Hero({ text, img, style }) {
+export default function HeroBanner({ text, img, style }) {
   let { 
     title, 
     tag, 

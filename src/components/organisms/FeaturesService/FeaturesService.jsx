@@ -1,7 +1,7 @@
-import "./features.scss"
+import "./featuresService.scss"
 import development from "../../../assets/img/development.svg"
 
-export default function Features({ text, cardStyle }) {
+export default function FeaturesService({ text, cardStyle }) {
   let { title, paragraph, description, link } = text;
 
   return (

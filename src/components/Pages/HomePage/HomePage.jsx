@@ -3,21 +3,20 @@ import "../../../components/_base/_index.scss"
 import logoWebflow from "../../../assets/img/logoWebflow.svg"
 import bannerHero from "../../../assets/img/bannerHero.svg"
 
+import HeaderNav from "../../organisms/HeaderNav/HeaderNav.jsx";
+import Service from "../../organisms/ServiceFull/ServiceFull.jsx";
+import Pricing from "../../organisms/PricingPlans/PricingPlans.jsx";
+import FeaturesComponent from "../../organisms/FeaturesService/FeaturesService";
+import AboutWebflow from "../../organisms/About/AboutWebflow";
+import Contact from "../../organisms/Contact/Contact.jsx";
+import Footer from "../../organisms/Footer/Footer.jsx";
+import HeroComponent from "../../molecules/HeroBanner/HeroBanner";
 
-import Header from "../../../components/organisms/Header/Header.jsx";
-import Service from "../../../components/organisms/Service/Service.jsx";
-import Pricing from "../../../components/organisms/Pricing/Pricing.jsx";
-import Features from "../../../components/organisms/Features/Features";
-import AboutWebflow from "../../../components/organisms/About/AboutWebflow";
-import Contact from "../../../components/organisms/Contact/Contact.jsx";
-import Footer from "../../../components/organisms/Footer/Footer.jsx";
-import Hero from "../../molecules/Hero/Hero";
-
-export default function Home() {
+export default function HomePage() {
   return (
     <>
-      <Header logoImg={logoWebflow} />
-      <Hero
+      <HeaderNav logoImg={logoWebflow} />
+      <HeroComponent
         img={bannerHero}
         text={{
           tag:"morden studio",
@@ -35,7 +34,7 @@ export default function Home() {
           ]
         }}
       />
-      <Features 
+      <FeaturesComponent 
         text={{
           title: "Custom Web Design",
           link: {

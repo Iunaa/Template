@@ -1,6 +1,6 @@
-import "./counter.scss"
+import "./counterStatistics.scss"
 
-export default function Counter(props) {
+export default function CounterStatistics(props) {
   const { data, background="secondary" } = props;
   let lengthData = `--${data.length}`
 

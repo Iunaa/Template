@@ -1,7 +1,21 @@
+import "./navBar.scss";
+
 import { Link } from 'react-router-dom';
 import NavItem from '../../atoms/NavItem/NavItem';
 
-import "./navbar.scss"
+export default function NavBar() {
+	return (
+    <div className="nav__menu">
+      <ul className="nav__items">
+        {listPages.map(((cur, idx) => (
+          <NavItem key={idx} router={cur.router} text={cur.text} />
+        )))}
+      </ul>
+      
+      <Link to="/contact" className="button button--border">Contact</Link>
+    </div>
+	)
+}
 
 const listPages = [
   {
@@ -21,17 +35,3 @@ const listPages = [
     text: "Blog"
   },
 ]
-
-export default function Navbar() {
-	return (
-    <div className="nav__menu">
-      <ul className="nav__items">
-        {listPages.map(((cur, idx) => (
-          <NavItem key={idx} router={cur.router} text={cur.text} />
-        )))}
-      </ul>
-      
-      <Link to="/contact" className="button button--border">Contact</Link>
-    </div>
-	)
-}
