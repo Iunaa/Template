@@ -13,8 +13,8 @@ export default function CounterStatistics(props) {
             <div key={idx} className={`counter__counterItem${lengthData} ${cur.icon && "counter__counterItem--icon"}`}>
               {cur.icon && (<img src={cur.icon.src} className="icon__card" alt={cur.icon.alt} />)}
               <div className="counter__text">
-                <p className="title--3">{cur.title}</p>
-                <p>{cur.text}</p>
+                <p className="text--h3">{cur.title}</p>
+                <p className="text--brown-dark">{cur.text}</p>
               </div>
             </div>
           ))}

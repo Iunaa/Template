@@ -16,8 +16,8 @@ export default function OurTeam() {
         <div className="container">
           <div className="our-team__header">
             <header className="headings--reverse3">
-              <h2 className="title--2 title--2--white our-team__title">Team of Designers and Developers</h2>
-              <h3 className="title--5">Our Team</h3>
+              <h2 className="our-team__title text--h2 text--white ">Team of Designers and Developers</h2>
+              <h3 className="text--h5">Our Team</h3>
             </header>
 
             <div className="our-team__arrows">
@@ -45,9 +45,9 @@ const our_teamCardsData = [
   {
     img: {
       src: personAzah,
-      alt: "aaaaaaa aaaa",
+      alt: "",
     },
-    name: "Azah Anyeni",
+    name: "Leonardo Oliveira",
     office: "Designer"
   },
   {
@@ -63,7 +63,7 @@ const our_teamCardsData = [
       src: personLeonardo,
       alt: "",
     },
-    name: "Leonardo Oliveira",
+    name: "Azah Anyeni",
     office: "Illustrator"
   },
   {

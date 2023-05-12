@@ -21,8 +21,8 @@ export default function HeroBanner({ text, img, style }) {
             
             <div className="hero__text">
               <header className="hero__titles headings--reverse1">
-                <h1 className={`hero__title ${style && `hero__title--${style}`} title--1 title--1--white`}>{title}</h1>
-                {tag && <h2 className="title title--5">{tag}</h2>}
+                <h1 className={`hero__title ${style && `hero__title--${style}`} text--h1 text--white`}>{title}</h1>
+                {tag && <h2 className="text--h5">{tag}</h2>}
               </header>
               <p className={`hero__paragraph ${style && `hero__paragraph--${style}`} text text--gray`}>{paragraph}</p>
               {button && (
