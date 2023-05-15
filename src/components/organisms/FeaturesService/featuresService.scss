@@ -1,7 +1,5 @@
 @use "../../_base/index"as*;
 
-$border-features--blue: 1px solid $color-blue;
-$border-features--orange: 1px solid $color-orange;
 $padding-features-mobile: 3.688rem;
 $padding-features-desktop: 7rem;
 
@@ -12,12 +10,9 @@ $padding-features-desktop: 7rem;
     bottom: $padding-features-mobile;
   };
   gap: 1rem;
-
+  
   @include for-size($screen-xl) {
     gap: 8.125rem;
-  }
-  
-  @include for-size($screen-lg) {
     padding: {
       top: $padding-features-desktop;
       bottom: $padding-features-desktop;
@@ -48,13 +43,13 @@ $padding-features-desktop: 7rem;
 
   &__text {
     width: 100%;
-    @include for-size($screen-lg) {
+    @include for-size($screen-xl) {
       max-width: 23.125rem;
     }
   }
 
   &__paragraph-description {
-    @include for-size($screen-lg) {
+    @include for-size($screen-xl) {
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
@@ -66,74 +61,24 @@ $padding-features-desktop: 7rem;
     overflow: hidden;
     margin-top: 2.25rem;
     height: 100%;
-    border: $border-features--blue;
+    border: $border--blue;
     border-radius: 0.375rem;
 
     &--secondary {
-      border: $border-features--orange;
+      border: $border--orange;
     }
-
     @include for-size($screen-lg) {
-      margin-top: 0;
       display: flex;
       align-items: end;
       border: none;
     }
-  }
-
-  &__icon {
-    margin-bottom: 2.563rem;
-  }
-
-  &__topic {
-    margin-bottom: 1.188rem;
-  }
-
-  &__professional {
-    background-color: $color-white;
-    padding: 2.813rem;
-    height: 21rem;
-    @include for-size($screen-lg) {
-      max-width: 21rem;
-      border: $border-features--blue;
-      border-top-right-radius: 0.375rem;
-      border-top-left-radius: 0.375rem;
-      border-bottom-left-radius: 0.375rem;
-    }
-
-    &--secondary {
-      @include for-size($screen-lg) {
-        border: $border-features--orange;
-      }
+    
+    @include for-size($screen-xl) {
+      margin-top: 0;
     }
   }
 
-  &__accessibility {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 2.813rem;
-    height: 17rem;
-    justify-content: end;
-    @include for-size($screen-lg) {
-      max-width: 21rem;
-      border-top-right-radius: 0.375rem;
-      border-bottom-right-radius: 0.375rem;
-      border:  {
-        top: $border-features--blue;
-        right: $border-features--blue;
-        bottom: $border-features--blue;
-      }
-    }
-
-    &--secondary {
-      border-top: $border-features--orange;
-      @include for-size($screen-lg) {
-        border:  {
-          right: $border-features--orange;
-          bottom: $border-features--orange;
-        };
-      }
-    }
-  }
+  // &__topic {
+  //   // margin-bottom: 1.188rem;
+  // }
 }

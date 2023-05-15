@@ -1,5 +1,6 @@
 import "./featuresService.scss"
 import development from "../../../assets/img/development.svg"
+import FeaturesCard from "../../molecules/FeaturesCard/FeaturesCard";
 
 export default function FeaturesService({ text, cardStyle }) {
   let { title, paragraph, description, link } = text;
@@ -23,16 +24,19 @@ export default function FeaturesService({ text, cardStyle }) {
           </div>
 
           <div className={`features__cards features__cards--${cardStyle}`}>
-            <div className={`features__professional features__professional--${cardStyle}`}>
-              <img className="features__icon" src={development} alt="icon" />
-              <h4 className="text--h4 features__topic">Professional</h4>
-              <p className="features__paragraph text">Full service range including technical skills, design.</p>
-            </div>
+            <FeaturesCard 
+              img={development}
+              title="Professional" 
+              paragraph="Full service range including technical skills, design."
+              cardStyle={cardStyle}
+            />
 
-            <div className={`features__accessibility features__accessibility--${cardStyle}`}>
-              <h4 className={`features__topic text--h4 ${cardStyle == "primary" && "text--white"}`}>Accessibility</h4>
-              <p className={`features__paragraph text ${cardStyle == "primary" && "text--gray"}`}>Business understanding, ability to put themselves.</p>
-            </div>
+            <FeaturesCard 
+              // img={development}
+              title="Accessibility" 
+              paragraph="Business understanding, ability to put themselves."
+              cardStyle={cardStyle}
+            />
           </div>
         </section>
       </div>
