@@ -1,109 +1,29 @@
 @use "../../_base/index"as*;
 
-@mixin bordersCounter-3() {
-  &:first-child {
-    border-bottom: 1px solid $color-brown--light;
-  }
-
-  &:last-child {
-    border-top: 1px solid $color-brown--light;
-  }
-
-  @include for-size($screen-xl) {
-    &:first-child {
-      border-bottom: none;
-      border-right: 1px solid $color-brown--light;
-    }
-    
-    &:last-child {
-      border-top: none;
-      border-left: 1px solid $color-brown--light;
-    }
-  }
-}
-
-@mixin bordersCounter-2() {
-  &:first-child {
-    border-bottom: 1px solid $color-brown--light;
-  }
-
-  @include for-size($screen-xl) {
-    &:first-child {
-      border-bottom: none;
-      border-right: 1px solid $color-brown--light;
-    }
-  }
-}
-
-@mixin counter-card() {
-  padding: 2.813rem 3rem 2.375rem;
-  display: flex;
-  flex: 1 1 auto;
-  width: 100%;
-  @include for-size($screen-md) {
-    flex-wrap: wrap;
-  }
-  @include for-size($screen-xl) {
-    flex-wrap: nowrap;
-  }
-}
+$padding-counter: 5.5rem;
+$border-counter: 1px solid $color-brown--light;
 
 .counter {
-  background-color: $color-secondary--dark;
-  border: 1px solid $color-brown--light;
+  border: $border-counter;
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   
   &__background {
-    &--secondary {
-      padding: 3rem 0;
-      background-color: $color-secondary--dark;
-    }
-
     &--primary {
-      padding: 3rem 0;
+      padding: $padding-counter 0;
       background-color: $color-primary;
     }
-  }
-  
-  &__text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.813rem;
-  }
-
-  &__counterItem {
-    @include counter-card();
-    @include bordersCounter-3();
     
-    &--icon {
-      width: 100%;
-      gap: 2.5rem;
-      flex: 1 1 auto;
-      padding: {
-        top: 2.063rem;
-        right: 1.75rem;
-        left: 1.75rem;
-      };
-      align-items: start;
-      @include for-size($screen-xl) {
-        align-items: center;
-        justify-content: space-between;
-        max-width: 36.625rem;
-        padding: 2rem 3rem;
-      }
+    &--secondary {
+      padding: $padding-counter 0;
+      background-color: $color-secondary;
     }
 
-    &--2 {
-      @include counter-card();
-      @include bordersCounter-2();
-    }
-
-    &--3 {
-      @include counter-card();
-      @include bordersCounter-3();
+    &--secondary-dark {
+      padding: $padding-counter 0;
+      background-color: $color-secondary--dark;
     }
   }
 
