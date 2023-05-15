@@ -1,12 +1,10 @@
 import "./counterStatistics.scss"
 
-export default function CounterStatistics(props) {
-  const { data, background="secondary" } = props;
-
+export default function CounterStatistics({ data, background="secondary" }) {
   return (
-    <div className={`counter__background--${background}`}>
+    <div className={`counter counter--${background}`}>
       <div className="container">
-        <div className="counter">
+        <div className="counter__items"> 
           {data.map((cur, idx) => (
             <div key={idx} className={`counter__item${cur.icon ? " counter__item--icon": ""} ${`counter__item--${cur.background}`}`}>
               {cur.icon && (<img src={cur.icon.src} className="icon__card" alt={cur.icon.alt} />)}
