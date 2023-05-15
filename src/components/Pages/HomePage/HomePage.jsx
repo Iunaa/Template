@@ -11,6 +11,7 @@ import AboutWebflow from "../../organisms/About/AboutWebflow";
 import Contact from "../../organisms/Contact/Contact.jsx";
 import Footer from "../../organisms/Footer/Footer.jsx";
 import HeroComponent from "../../molecules/HeroBanner/HeroBanner";
+import CounterStatistics from "../../molecules/CounterStatistics/CounterStatistics";
 
 export default function HomePage() {
   return (
@@ -47,6 +48,26 @@ export default function HomePage() {
       <AboutWebflow />
       <Service/>
       <Pricing/>
+      <CounterStatistics
+        data={[
+          {
+            title: "42%",
+            text: "Years of experience",
+            background: "secondary",
+          },
+          {
+            title: "73+",
+            text: "Agency members",
+            background: "secondary--dark",
+          },
+          {
+            title: "5.000",
+            text: "Projects complete",
+            background: "secondary",
+          },
+        ]}
+        background="secondary"
+      />
       <Contact/>
       <Footer/>
     </>

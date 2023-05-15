@@ -30,3 +30,5 @@
 @mixin border-left($style: solid, $color: $color-brown--light) {
   border-left: 0.063rem solid $color;
 }
+
+$border--brown-light: 1px solid $color-brown--light;
