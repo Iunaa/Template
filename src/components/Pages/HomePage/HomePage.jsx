@@ -47,7 +47,6 @@ export default function HomePage() {
       />
       <AboutWebflow />
       <Service/>
-      <Pricing/>
       <CounterStatistics
         data={[
           {
@@ -58,7 +57,7 @@ export default function HomePage() {
           {
             title: "73+",
             text: "Agency members",
-            background: "secondary--dark",
+            background: "secondary-dark",
           },
           {
             title: "5.000",
@@ -68,6 +67,7 @@ export default function HomePage() {
         ]}
         background="secondary"
       />
+      <Pricing/>
       <Contact/>
       <Footer/>
     </>
