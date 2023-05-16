@@ -31,17 +31,17 @@ export default function AboutUs() {
         {
           title: "42%",
           text: "Years of experience",
-          background: "secondary--dark",
+          background: "secondary-dark",
         },
         {
           title: "73+",
           text: "Agency members",
-          background: "secondary--dark",
+          background: "secondary-dark",
         },
         {
           title: "5.000",
           text: "Projects complete",
-          background: "secondary--dark",
+          background: "secondary-dark",
         },
       ]}
       background="secondary-dark"
@@ -51,7 +51,7 @@ export default function AboutUs() {
           {
             title: "42%",
             text: "Years of experience",
-            background: "secondary--dark",
+            background: "secondary-dark",
             icon: {
               src: iconTeste,
               alt: "",
@@ -60,7 +60,7 @@ export default function AboutUs() {
           {
             title: "73+",
             text: "Agency members",
-            background: "secondary--dark",
+            background: "secondary-dark",
             icon: {
               src: iconTeste,
               alt: "",
