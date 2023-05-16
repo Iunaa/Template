@@ -4,6 +4,12 @@ import FeaturesCard from "../../molecules/FeaturesCard/FeaturesCard";
 
 export default function FeaturesService({ text, cardStyle }) {
   let { title, paragraph, description, link } = text;
+  let classFeatures = {
+    title: `text--h3 ${cardStyle == "primary" && "text--white"}`,
+    link: `features__anchor ${cardStyle == "primary" ? "text--white" : "text--brown-dark"} ${link && link.style}`,
+    paragraph: `text text--big ${cardStyle == "primary" ? "text--white" : "text--brown-dark"}`,
+    description: `text ${cardStyle == "primary" ? "text--gray" : "text"}`,
+  }
 
   return (
     <div className={`features__background--${cardStyle}`}>
@@ -11,15 +17,15 @@ export default function FeaturesService({ text, cardStyle }) {
         <section className="features">
           <div className="features__text">
             <header className="headings--reverse3 features__title">
-              {title && (<h2 className={`text--h3 ${cardStyle == "primary" && "text--white"}`}>Custom Web Design</h2>)}
+              {title && (<h2 className={classFeatures.title}>Custom Web Design</h2>)}
               <h3 className="text--h5">Features</h3>
             </header>
 
-            {link && (<a className={`features__anchor ${cardStyle == "primary" ? "text--white" : "text--brown-dark"} ${link.style}`} href={link.src}>{link.content}</a>)}
+            {link && (<a className={classFeatures.link} href={link.src}>{link.content}</a>)}
 
             <div className="features__paragraph-description">
-              {paragraph && (<p className={`text text--big ${cardStyle == "primary" ? "text--white" : "text--brown-dark"}`}>{paragraph}</p>)}
-              {description && (<p className={`text ${cardStyle == "primary" ? "text--gray" : "text"}`}>{description}</p>)}
+              {paragraph && (<p className={classFeatures.paragraph}>{paragraph}</p>)}
+              {description && (<p className={classFeatures.description}>{description}</p>)}
             </div>
           </div>
 
