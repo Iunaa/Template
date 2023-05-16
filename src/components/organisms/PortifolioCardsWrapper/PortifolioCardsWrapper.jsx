@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PortifolioCard from "../../molecules/PortifolioCard/PortifolioCard";
 import PortifolioCardItems from "../../../database/PortifolioCardsItems.json";
+import "./PortifolioCardsWrapper.scss";
 
 const list = PortifolioCardItems;
 console.log(list);
