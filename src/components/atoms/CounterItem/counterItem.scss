@@ -1,0 +1,58 @@
+@import "../../_base/index.scss";
+
+.counter {
+  &__item {
+    display: flex;
+    padding: 2.813rem 3rem 2.375rem;
+    width: 100%;
+
+    &--primary {
+      background-color: $color-primary;
+    }
+    &--secondary {
+      background-color: $color-secondary;
+    }
+    &--secondary-dark {
+      background-color: $color-secondary-dark;
+    }
+    
+    @include for-size($screen-md) {
+      flex-wrap: wrap;
+    }
+    @include for-size($screen-xl) {
+      flex-wrap: nowrap;
+    }
+
+    @include for-size($screen-xl, $width: max) {
+      &:not(:last-child) {
+        border-bottom: $border--brown-light;
+      }
+    }
+    @include for-size($screen-xl) {
+      &:not(:last-child) {
+        border-right: $border--brown-light;
+      }
+    }
+
+    &--icon {
+      width: 100%;
+      gap: 2.5rem;
+      padding: {
+        top: 2.063rem;
+        left: 1.75rem;
+      };
+      
+      @include for-size($screen-xl) {
+        align-items: center;
+        max-width: 36.625rem;
+        padding: 2rem 3rem;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.813rem;
+  }
+}

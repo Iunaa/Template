@@ -1,0 +1,86 @@
+@use "../../_base/index"as*;
+
+.slick-slide {
+ position: relative;
+}
+
+// .slick-list {
+//   margin: 0 -10px;
+// }
+
+.slick-arrow {
+}
+.slick-prev {
+  display: none;
+  width: 100px;
+  position: static;
+  position: absolute;
+  top: -87px;
+  right: 90px;
+  left: auto;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid $color-blue;
+  border-radius: 1.5rem;
+  @include boxShadow();
+
+  &::before {
+    content: url("../../../assets/img/arrowLeft.svg");
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  &:hover {
+    background-color: $color-tertiary;
+  }
+}
+
+.slick-next {
+  width: 100px;
+  position: static;
+  position: absolute;
+  right: 0px;
+  top: -85px;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid $color-blue;
+  border-radius: 1.5rem;
+  @include boxShadow();
+  &::before {
+    content: url("../../../assets/img/arrowRight.svg");
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  &:hover {
+    background-color: $color-tertiary;
+  }
+}
+
+.our-team {
+  &__cards {
+    // display: flex;
+    // gap: 1.875rem;
+    // justify-content: space-between;
+    // overflow: hidden;
+  }
+
+  &__arrows {
+    display: none;
+    // @include for-size($screen-md) {
+    //   display: flex;
+    //   gap: 1rem;
+    // }
+  }
+
+  // &__arrow {
+  //   width: 3rem;
+  //   height: 3rem;
+  //   border: 1px solid $color-blue;
+  //   border-radius: 1.5rem;
+  //   @include boxShadow();
+  //   &:hover {
+  //     @include buttonHove();
+  //   }
+  // }
+}

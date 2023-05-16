@@ -1,6 +1,6 @@
-import "./hamburger.scss"
+import "./hamburgerMenu.scss"
 
-export default function Hamburger() {
+export default function HamburgerMenu() {
   const hamburgerToggle = () => {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav__menu");

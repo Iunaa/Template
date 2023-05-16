@@ -27,92 +27,8 @@
   letter-spacing: -0.125rem;
 }
 
-.title {
-  @include typography($color: $color-brown--dark, $weight: 800);
-
-  &--white {
-    color: $color-white;
-  }
-
-  &--1 {
-    color: $color-brown--dark;
-    @include title-typography();
-    &--white {
-      color: $color-white;
-    }
-    @include for-size($screen-md, $width: max) {
-      font-size: 3.5rem;
-    }
-  }
-
-  &--2 {
-    color: $color-brown--dark;
-    font-size: 3.5rem;
-    line-height: 4rem;
-    letter-spacing: -0.063rem;
-    &--white {
-      color: $color-white;
-    }
-  }
-  
-  &--3 {
-    color: $color-brown--dark;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    font-weight: bold;
-    &--white {
-      color: $color-white;
-    }
-  }
-
-  &--4 {
-    color: $color-brown--dark;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 2rem;
-    &--white {
-      color: $color-white;
-    }
-    &-white {
-      color: $color-brown--dark;
-      font-size: 1.5rem;
-      font-weight: 700;
-      line-height: 2rem;
-      color: $color-white;
-    }
-  }
-  
-  &--5 {
-    color: $color-tertiary;
-    font-weight: 400;
-    font-size: 1rem;
-    letter-spacing: 0.188rem;
-    text-transform: uppercase;
-    width: 100%;
-    &--white {
-      color: $color-white;
-    }
-  }
-}
-
 .text {
   @include typography($color: $color-brown);
-
-  &--brown-dark {
-    @include typography($color: $color-brown--dark);
-  }
-
-  &--white {
-    @include typography($color: $color-white);
-  }
-
-  &--gray {
-    @include typography($color: $color-gray);
-  }
-
-  &--gray-dark {
-    @include typography($color: $color-gray--dark);
-  }
 
   &--small {
     font-size: 0.875rem;
@@ -121,11 +37,70 @@
 
   &--big {
     font-size: 1.25rem;
+    line-height: 2rem
   }
 
   &--label {
     font-weight: 700;
     font-size: 0.75rem;
     line-height: 0.769rem;
+  }
+
+  // Titles
+  &--h1 {
+    @include typography($color: $color-brown--dark, $weight: 800); 
+    @include title-typography();
+    
+    @include for-size($screen-md, $width: max) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &--h2 {
+    @include typography($color: $color-brown--dark, $weight: 800);
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -0.063rem;
+  }
+  
+  &--h3 {
+    @include typography($color: $color-brown--dark, $weight: 800); 
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+  }
+
+  &--h4 {
+    @include typography($color: $color-brown--dark, $weight: 800);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+  
+  &--h5 {
+    @include typography($color: $color-brown--dark, $weight: 800);
+    color: $color-tertiary;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.188rem;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  // Colors
+  &--brown-dark {
+    color: $color-brown--dark;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--gray {
+    color: $color-gray;
+  }
+
+  &--gray-dark {
+    color: $color-gray--dark;
   }
 }

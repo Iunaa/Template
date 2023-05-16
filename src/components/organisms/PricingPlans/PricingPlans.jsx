@@ -1,5 +1,24 @@
 import CardPricing from "../../molecules/CardPricing/CardPricing"
-import "./pricing.scss"
+import "./pricingPlans.scss"
+
+export default function PricingPlans(){
+  return(
+    <>
+      <section className="pricing">
+        <div className="container">
+          <header className="headings--reverse2">
+            <h2 className="title title--2 pricing__title">Explore Pricing Plans</h2>
+            <h3 className="title title--5">Pricing</h3>
+          </header>
+
+          <div id="pricingCards" className="pricing__cards">
+            <CardPricing data={pricingCardsData}/>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
 
 const pricingCardsData = [
   {
@@ -24,22 +43,3 @@ const pricingCardsData = [
     topics: ["enable", "enable", "enable"],
   }
 ]
-
-export default function Pricing(){
-  return(
-    <>
-      <section className="pricing">
-        <div className="container">
-          <header className="headings--reverse2">
-            <h2 className="title title--2 pricing__title">Explore Pricing Plans</h2>
-            <h3 className="title title--5">Pricing</h3>
-          </header>
-
-          <div id="pricingCards" className="pricing__cards">
-            <CardPricing data={pricingCardsData}/>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}

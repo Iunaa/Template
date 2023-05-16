@@ -1,32 +1,11 @@
-import "./service.scss"
+import "./serviceFull.scss"
 import ServiceList from "../../molecules/ServiceList/ServiceList.jsx";
 
 import design from "../../../assets/img/design.svg"
 import development from "../../../assets/img/development.svg"
 import marketing from "../../../assets/img/marketing.svg"
 
-const serviceCardsData = [
-  {
-    img: design, 
-    title: "Design",
-    paragraph: "Agency provides a full service range including technical skills, design.", 
-    anchor: "Learn More",
-  },
-  {
-    img: development,
-    title: "Development",
-    paragraph: "Full service range including technical skills, design, business etc.",
-    anchor: "Discover More",
-  },
-  {
-    img: marketing,
-    title: "Marketing",
-    paragraph: "Technical skills, design, business understanding, ability.",
-    anchor: "Explore Now",
-  },
-]
-
-export default function Service(){
+export default function ServiceFull(){
   return (    
     <div className="service">
       <div className="container">
@@ -50,3 +29,24 @@ export default function Service(){
     </div>
   ) 
 }
+
+const serviceCardsData = [
+  {
+    img: design, 
+    title: "Design",
+    paragraph: "Agency provides a full service range including technical skills, design.", 
+    anchor: "Learn More",
+  },
+  {
+    img: development,
+    title: "Development",
+    paragraph: "Full service range including technical skills, design, business etc.",
+    anchor: "Discover More",
+  },
+  {
+    img: marketing,
+    title: "Marketing",
+    paragraph: "Technical skills, design, business understanding, ability.",
+    anchor: "Explore Now",
+  },
+]

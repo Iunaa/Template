@@ -1,0 +1,30 @@
+@use "../../_base/index"as*;
+
+$padding-counter: 5.5rem;
+
+.counter {
+  padding: $padding-counter 0;
+  &--primary {
+    background-color: $color-primary;
+  }
+  
+  &--secondary {
+    background-color: $color-secondary;
+  }
+
+  &--secondary-dark {
+    background-color: $color-secondary-dark;
+  }
+  
+  &__items {
+    border: $border--brown-light;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    @include for-size(screen-xl) {
+      flex-direction: row;
+    }
+  }
+}

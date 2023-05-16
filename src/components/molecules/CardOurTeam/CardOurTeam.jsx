@@ -7,8 +7,8 @@ export default function CardOurTeam({ img, name, office }) {
       <div className={`${ourTeamClass}__img`}>
         <img src={`${img.src}`} alt={`${img.alt}`} />
       </div>
-      <p className={`title--4-white ${ourTeamClass}__name`}>{name}</p>
-      <p className={`text--gray ${ourTeamClass}__role`}>{office}</p>
+      <p className={`${ourTeamClass}__name text--h4 text--white`}>{name}</p>
+      <p className={`${ourTeamClass}__role text text--gray`}>{office}</p>
     </a>
   )
 }

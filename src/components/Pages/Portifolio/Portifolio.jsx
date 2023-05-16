@@ -1,4 +1,4 @@
-import Header from "../../organisms/Header/Header";
+import HeaderNav from "../../organisms/HeaderNav/HeaderNav";
 import PortifolioBanner from "../../molecules/PortifolioBanner/PortifolioBanner";
 import PortifolioCardsWrapper from "../../organisms/PortifolioCardsWrapper/PortifolioCardsWrapper";
 import PortifolioPaginacao from "../../molecules/PortifolioPaginacao/PortifolioPaginacao";
@@ -9,7 +9,7 @@ import Logo from "../../../assets/img/logoAgency.svg";
 export default function Portifolio() {
   return (
     <>
-      <Header logoimg={Logo} />
+      <HeaderNav logoImg={Logo} />
       <PortifolioBanner />
       <PortifolioCardsWrapper />
       <PortifolioPaginacao />
