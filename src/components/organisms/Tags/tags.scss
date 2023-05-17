@@ -36,7 +36,7 @@
 
     &__item {
         color: #391400;
-        padding-left: 60px;
+        /*padding-left: 60px;*/
     }
 
     &__client {
@@ -48,7 +48,11 @@
         letter-spacing: 3px;
         color: #ef6d58;
     }
-
+    &__nav2 {
+        @media (min-width: 768px) {
+            padding-right: 135px;
+        }
+    }
     &__logo {
         padding-bottom: 47px;
     }

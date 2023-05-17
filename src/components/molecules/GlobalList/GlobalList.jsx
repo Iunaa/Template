@@ -4,7 +4,7 @@ function GlobalList(){
  
     return(
         // <div className="tags container">
-            <nav className="tags__nav">
+            <nav className="tags__nav1">
                 <h5 className="tags__subtitle">Category</h5>
                 <ul className="tags__list">
                     <li className="tags__item">Art Direction</li>

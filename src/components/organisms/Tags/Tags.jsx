@@ -9,7 +9,7 @@ function Tags(){
             <div className="tags container">
                  <GlobalList/>
                 
-                <nav className="tags__nav">
+                <nav className="tags__nav2">
                    
 
                     <h5 className="tags__client">Client</h5>

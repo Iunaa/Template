@@ -29,6 +29,7 @@
             padding: 10px;
             height: 416px;
             max-width: 570px;
+            /* margin-left: 135px;*/
         }
     }
     &__subtitle {
@@ -75,12 +76,15 @@
         @media (min-width: 768px) {
             background-image: url(../../../assets/img/workmedia.png);
             max-width: 570px;
+            /* margin-right: 135px;*/
         }
     }
 
     &__allcards {
         margin: 0 auto;
         @media (min-width: 768px) {
+            /*margin-left: 135px;
+            margin-right: 135px;*/
         }
     }
 
