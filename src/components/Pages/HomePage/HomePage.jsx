@@ -2,6 +2,7 @@
 import "../../../components/_base/_index.scss"
 import logoWebflow from "../../../assets/img/logoWebflow.svg"
 import bannerHero from "../../../assets/img/bannerHero.svg"
+import development from "../../../assets/img/development.svg"
 
 import HeaderNav from "../../organisms/HeaderNav/HeaderNav.jsx";
 import Service from "../../organisms/ServiceFull/ServiceFull.jsx";
@@ -42,6 +43,16 @@ export default function HomePage() {
             src: "#",
             content: "Read More",
           }
+        }}
+        firstCard={{
+          imgSrc: development,
+          title: "Professional",
+          paragraph: "Full service range including technical skills, design."
+        }}
+        lastCard={{
+          // imgSrc: development,
+          title: "Accessibility",
+          paragraph: "Business understanding, ability to put themselves."
         }}
         cardStyle="primary"
       />
