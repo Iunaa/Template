@@ -2,8 +2,12 @@ import CounterItem from "../../atoms/CounterItem/CounterItem"
 import "./counterStatistics.scss"
 
 export default function CounterStatistics({ data, background="secondary" }) {
+  const classCounterStatistics = {
+    counter: `counter counter--${background}`
+  }
+  
   return (
-    <div className={`counter counter--${background}`}>
+    <div className={classCounterStatistics.counter}>
       <div className="container">
         <div className="counter__items"> 
           {data.map(({ title, text, icon, background }, idx) => (

@@ -11,33 +11,31 @@ import personIzabella from "../../../assets/img/people/person--Izabella.svg";
 
 export default function OurTeam() {
   return (
-    <>
-      <section className="our-team">
-        <div className="container">
-          <div className="our-team__header">
-            <header className="headings--reverse3">
-              <h2 className="our-team__title text--h2 text--white ">Team of Designers and Developers</h2>
-              <h3 className="text--h5">Our Team</h3>
-            </header>
+    <section className="our-team">
+      <div className="container">
+        <div className="our-team__header">
+          <header className="headings--reverse3">
+            <h2 className="our-team__title text--h2 text--white ">Team of Designers and Developers</h2>
+            <h3 className="text--h5">Our Team</h3>
+          </header>
 
-            <div className="our-team__arrows">
-              <button className="our-team__arrow" href=""><img src={arrowLeft} alt="" /></button>
-              <button className="our-team__arrow" href=""><img src={arrowRight} alt="" /></button>
-            </div>
-          </div>
-
-          <div className="our-team__cards">
-            {our_teamCardsData.map((cur, idx) => (
-              <CardOurTeam 
-              key={idx} 
-              img={cur.img} 
-              name={cur.name} 
-              office={cur.office} />
-            ))}
+          <div className="our-team__arrows">
+            <button className="our-team__arrow" href=""><img src={arrowLeft} alt="" /></button>
+            <button className="our-team__arrow" href=""><img src={arrowRight} alt="" /></button>
           </div>
         </div>
-      </section>
-    </>
+
+        <div className="our-team__cards">
+          {our_teamCardsData.map((cur, idx) => (
+            <CardOurTeam 
+            key={idx} 
+            img={cur.img} 
+            name={cur.name} 
+            office={cur.office} />
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
