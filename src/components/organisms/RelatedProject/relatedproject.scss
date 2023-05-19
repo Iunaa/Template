@@ -1,90 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;900;1,400&display=swap");
 
-@mixin tagCard() {
-    font-size: 16px;
-    line-height: 32px;
-    color: #391400;
-    border: 1px solid white;
-    border-radius: 19px;
-    background-color: white;
-}
 .related {
     font-family: "Epilogue", sans-serif;
     background-color: #fdf0e9;
     padding-bottom: 112px;
 
-    &__card1 {
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-        background-image: url("../../../assets/img/sofa.png");
-        border-radius: 6px;
-        width: 100%;
-        max-width: 329px;
-        height: 416px;
-        padding-left: 34px;
-        padding-bottom: 24px;
-
-        @media (min-width: 768px) {
-            padding: 10px;
-            height: 416px;
-            max-width: 570px;
-            /* margin-left: 135px;*/
-        }
-    }
     &__subtitle {
         font-size: 24px;
+        border-top: 1px solid #f3d1bf;
         font-weight: 700;
         line-height: 32px;
-
+        padding-top: 68.5px;
         padding-bottom: 40px;
         color: #391400;
-        @media (min-width: 768px) {
-            // padding-left: 265px;
-        }
     }
 
-    &__design {
-        @include tagCard();
-        width: 84px;
-        padding: 5px 16px;
-        margin-bottom: 27px;
-        margin-top: -20px;
-    }
+    // &__card2 {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-end;
+    //     background-image: url("../../../assets/img/door.png");
+    //     border-radius: 6px;
+    //     width: 100%;
+    //     max-width: 329px;
+    //     height: 416px;
+    //     padding-left: 34px;
+    //     padding-bottom: 24px;
 
-    &__sofa {
-        font-size: 40px;
-        font-weight: 800;
-        height: 38px;
-        line-height: 48px;
-        color: white;
-        margin-bottom: 47px;
-    }
-
-    &__card2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        background-image: url("../../../assets/img/door.png");
-        border-radius: 6px;
-        width: 100%;
-        max-width: 329px;
-        height: 416px;
-        padding-left: 34px;
-        padding-bottom: 24px;
-
-        @media (min-width: 768px) {
-            background-image: url(../../../assets/img/workmedia.png);
-            max-width: 570px;
-            /* margin-right: 135px;*/
-        }
-    }
+    //     @media (min-width: 768px) {
+    //         background-image: url(../../../assets/img/workmedia.png);
+    //         max-width: 570px;
+    //     }
+    // }
 
     &__allcards {
         margin: 0 auto;
         @media (min-width: 768px) {
-            /*margin-left: 135px;
-            margin-right: 135px;*/
         }
     }
 
@@ -100,7 +51,12 @@
     }
 
     &__branding {
-        @include tagCard();
+        font-size: 16px;
+        line-height: 32px;
+        color: #391400;
+        border: 1px solid white;
+        border-radius: 19px;
+        background-color: white;
         width: 102px;
         height: 38px;
         text-align: center;

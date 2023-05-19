@@ -17,6 +17,10 @@
             justify-content: space-between;
             padding-top: 80px;
         }
+
+        .ContactList__article4 {
+            padding-bottom: 54px;
+        }
     }
 
     &__title {
@@ -33,9 +37,6 @@
             flex-direction: row;
             gap: 130px;
         }
-    }
-
-    &__menu1 {
     }
 
     &__menu2 {
@@ -117,7 +118,8 @@
     &__paragraph2 {
         font-size: 16px;
         line-height: 32px;
-        padding-top: 44px;
+        // border-top: 1px solid #f3d1bf;
+        padding-top: 54px;
         margin-bottom: 32px;
         color: rgba(57, 20, 0, 0.64);
     }

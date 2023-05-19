@@ -6,14 +6,15 @@
     @media (min-width: 768px) {
         display: flex;
         justify-content: space-evenly;
-        padding-left: 135px;
-        padding-right: 135px;
+        // padding-left: 135px;
+        // padding-right: 135px;
     }
 
     &__img {
         width: 100%;
-        @media (min-width: 768px) {
-            width: 1170px;
+        height: 100%;
+        max-width: 1170px;
+        @media (min-width: 968px) {
             height: 726px;
         }
     }

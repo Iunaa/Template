@@ -20,10 +20,10 @@ function GridImages(){
             
             
                 <picture className="grid5__picture2">
-                    <img className="grid5__img1" src={bitmap5}></img>
-                    <img className="grid5__img2" src={bitmap6}></img>
-                    <img className="grid5__img3" src={bitmap7}></img>
-                    <img className="grid5__img4" src={bitmap8}></img>
+                    <img className="grid5__img" src={bitmap5}></img>
+                    <img className="grid5__img" src={bitmap6}></img>
+                    <img className="grid5__img" src={bitmap7}></img>
+                    <img className="grid5__img" src={bitmap8}></img>
 
                 </picture>
             
