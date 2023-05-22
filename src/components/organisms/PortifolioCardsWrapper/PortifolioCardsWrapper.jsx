@@ -59,7 +59,7 @@ export default function PortifolioCardsWrapper() {
           </select>
         </div>
       </div>
-      <section>
+      <section className="portifolio-cards__container">
         {list
           .filter(
             (card) => card.tag.toLowerCase() === selectTag || selectTag === ""

@@ -20,14 +20,13 @@
   &__text {
     display: flex;
     flex-direction: column;
-    margin: -9rem 4rem;
+    margin: -9rem 3.8rem;
     position: absolute;
     gap: 1rem;
     z-index: 1;
   }
   &__tag {
     display: flex;
-    // height: 2rem;
     padding: 0 1.5rem;
     align-items: center;
     justify-content: center;
@@ -40,6 +39,7 @@
   }
   &__title {
     align-items: center;
+    padding: 0 0.25rem;
     color: $color-white;
   }
 }

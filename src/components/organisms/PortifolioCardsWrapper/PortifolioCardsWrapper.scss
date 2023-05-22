@@ -21,22 +21,11 @@
   }
 }
 
-// .portifolio-filterDesktop {
-//   //   display: none;
-//   @media (min-width: 769px) {
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-//     padding: 4rem 0 2rem 0;
-//     gap: 4rem;
-//     background-color: #fdf0e9;
-//   }
-//   &__text {
-//     position: relative;
-//   }
-//   &__number {
-//     position: absolute;
-//     padding: 0 0 0 4.5rem;
-//     margin-top: -1.8rem;
+// .portifolio-cards {
+//   &__container {
+//     @media (min-width: 769px) {
+//       display: flex;
+//       flex-wrap: wrap;
+//     }
 //   }
 // }
