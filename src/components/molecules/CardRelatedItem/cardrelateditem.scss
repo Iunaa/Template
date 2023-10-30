@@ -20,9 +20,9 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    @media (min-width: 768px) {
-        max-height: 416px;
-        max-width: 570px;
+    @media (min-width: 548px) {
+        max-height: 416vh;
+        max-width: 570vw;
     }
 }
 
