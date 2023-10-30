@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;900;1,400&display=swap");
+
+.tags {
+    display: flex;
+    // flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    font-family: "Epilogue", sans-serif;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 157px;
+    }
+
+    &__background {
+        background-color: rgba(253, 240, 233, 1);
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 3px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        color: #ef6d58;
+    }
+
+    &__list {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 1px;
+        padding-bottom: 50px;
+    }
+
+    &__item {
+        color: #391400;
+        /*padding-left: 60px;*/
+    }
+
+    &__client {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        letter-spacing: 3px;
+        color: #ef6d58;
+    }
+    &__nav2 {
+        @media (min-width: 768px) {
+            padding-right: 135px;
+        }
+    }
+    &__logo {
+        padding-bottom: 47px;
+    }
+
+    &__date {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #ef6d58;
+        padding-bottom: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    &__paragraph {
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 72px;
+        line-height: 32px;
+        color: #391400;
+    }
+}

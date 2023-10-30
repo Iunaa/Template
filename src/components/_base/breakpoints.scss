@@ -1,0 +1,33 @@
+$screen-sm: 525.008px;
+$screen-md: 768px;
+$screen-lg: 968px;
+$screen-xl: 1160px;
+$screen-grid: 1305.008px;
+
+@mixin for-size($size, $width: min) {
+    @if $size == screen-sm {
+        @media (#{$width}-width: $screen-sm) {
+            @content;
+        }
+    } @else if $size == screen-md {
+        @media (#{$width}-width: $screen-md) {
+            @content;
+        }
+    } @else if $size == screen-lg {
+        @media (#{$width}-width: $screen-lg) {
+            @content;
+        }
+    } @else if $size == screen-xl {
+        @media (#{$width}-width: $screen-xl) {
+            @content;
+        }
+    } @else if $size == screen-grid {
+        @media (#{$width}-width: $screen-grid) {
+            @content;
+        }
+    } @else {
+        @media (#{$width}-width: $size) {
+            @content;
+        }
+    }
+}
